@@ -1,0 +1,8 @@
+Thumbs.db
+
+.vscode/
+
+*.css.map
+*.sass-cache/
+
+*.tmp
