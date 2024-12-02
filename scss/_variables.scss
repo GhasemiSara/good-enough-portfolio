@@ -1,0 +1,45 @@
+/* LIGHT THEME */
+$light-background: #f0f4f1;
+$light-text: #0b2005;
+$light-primary: #99c67c;
+$light-secondary: #921909;
+$light-accent: #eea30f;
+
+/* DARK THEME*/
+$dark-background: #0d0d1b;
+$dark-text: #f4f6fb;
+$dark-primary: #1a3e6b;
+$dark-secondary: #714c8c;
+$dark-accent: #fbcf00;
+
+/* FONTS*/
+$font-body: "Inter", sans-serif;
+$font-headings-light: "Playfair Display", serif;
+$font-headings-dark: "Oswald", sans-serif;
+
+/* SPACING*/
+$spacing-small: 8px;
+$spacing-base: 16px;
+$spacing-large: 32px;
+$spacing-extra-large: 64px;
+$border-radius: 4px;
+
+/*TRANSIZIONI*/ 
+$transition-duration: 0.3s;
+
+
+$theme-light: (
+   background: $light-background,
+   text: $light-text,
+   primary: $light-primary,
+   secondary: $light-secondary,
+   accent: $light-accent
+);
+
+$theme-dark: (
+   background: $dark-background,
+   text: $dark-text,
+   primary: $dark-primary,
+   secondary: $dark-secondary,
+   accent: $dark-accent
+);
