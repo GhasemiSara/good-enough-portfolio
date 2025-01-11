@@ -1,0 +1,32 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $font-body;
+   background-color: $light-background;
+   color: $light-text;
+   line-height: 1.5;
+   transition: background-color $transition-duration, color $transition-duration;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: $font-headings-light;
+   font-weight: 700;
+}
+
+p {
+   font-size: 1rem;
+}
+
+a {
+   color: $light-link;
+   text-decoration: none;
+
+   &:hover {
+      color: $hover-text;
+      background-color: $hover-background;
+   }
+}
