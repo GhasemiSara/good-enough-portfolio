@@ -5,6 +5,7 @@
 /*TRANSITIONS*/
 /*SHADOWS*/
 /*STATE COLORS*/
+/*BORDERS*/
 * {
   margin: 0;
   padding: 0;
@@ -31,8 +32,4 @@ p {
 a {
   color: #064b3f;
   text-decoration: none;
-}
-a:hover {
-  color: black;
-  background-color: #b5d5a0;
 }/*# sourceMappingURL=main.css.map */

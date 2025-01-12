@@ -2,7 +2,7 @@
 $light-background: #f0f4f1;
 $light-text: #0b2005;
 $light-primary: #99c67c;
-$light-secondary: #921909;
+$light-secondary: #1EBD39;
 $light-accent: #eea30f;
 $light-border: #d1e0d3;
 $light-link: #064b3f;
@@ -13,6 +13,8 @@ $dark-text: #f4f6fb;
 $dark-primary: #1a3e6b;
 $dark-secondary: #714c8c;
 $dark-accent: #fbcf00;
+$dark-border: #2a2a3d;
+$dark-link: #ffcc00;
 
 /* FONTS*/
 $font-body: "Inter", sans-serif;
@@ -38,6 +40,12 @@ $hover-background: lighten($light-primary, 10%);
 $hover-text: darken($light-text, 10%);
 $focus-background: lighten($light-secondary, 10%);
 $focus-text: darken($light-text, 20%);
+
+/*BORDERS*/
+$border-light: 1px solid $light-border;
+$border-dark: 1px solid $dark-border;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
 
 $theme-light: (
    background: $light-background,
