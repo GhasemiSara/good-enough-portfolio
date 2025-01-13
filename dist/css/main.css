@@ -1,10 +1,10 @@
 /* LIGHT THEME */
 /* DARK THEME*/
+/*STATE COLORS*/
 /* FONTS*/
 /* SPACING*/
 /*TRANSITIONS*/
 /*SHADOWS*/
-/*STATE COLORS*/
 /*BORDERS*/
 * {
   margin: 0;
@@ -30,6 +30,41 @@ p {
 }
 
 a {
-  color: #064b3f;
+  color: #0a6c58;
   text-decoration: none;
+}
+
+header {
+  background-color: #f0f4f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header .navbar {
+  padding: 8px 16px;
+}
+header .navbar .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  padding: 0 8px;
+  color: #72b25f;
+  transition: color 0.3s ease-in-out;
+}
+header .navbar .navbar-brand:hover {
+  color: #457338;
+}
+header .navbar .navbar-toggler {
+  border: none;
+  box-shadow: none;
+  padding: 8px;
+}
+header .navbar .navbar-nav {
+  margin-left: 0;
+  font-size: 1.1rem;
+}
+header .navbar .navbar-nav .nav-link {
+  padding: 8px 16px;
+}
+header .navbar .navbar-nav .nav-link:hover {
+  color: black;
+  background-color: #90c381;
 }/*# sourceMappingURL=main.css.map */

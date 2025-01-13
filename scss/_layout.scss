@@ -1,0 +1,41 @@
+header {
+   background-color: $light-background;
+   box-shadow: $shadow-light;
+
+   .navbar {
+      padding: $spacing-small $spacing-medium;
+
+      .navbar-brand {
+         font-family: $font-headings-light;
+         font-weight: 500;
+         font-size: 1.75rem;
+         padding: 0 $spacing-small;
+         color: $light-primary;
+         transition: color $transition-duration ease-in-out;
+
+         &:hover {
+            color: darken($light-primary, 20%);
+         }
+      }
+
+      .navbar-toggler {
+         border: none;
+         box-shadow: none;
+         padding: $spacing-small;
+      }
+
+      .navbar-nav {
+         margin-left: 0;
+         font-size: 1.1rem;
+
+         .nav-link {
+            padding: $spacing-small $spacing-medium;
+            
+            &:hover {
+               color: $hover-text;
+               background-color: $hover-background;
+            }
+         }
+      }
+   }
+}

@@ -1,11 +1,11 @@
 /* LIGHT THEME */
 $light-background: #f0f4f1;
 $light-text: #0b2005;
-$light-primary: #99c67c;
-$light-secondary: #1EBD39;
+$light-primary: #72b25f;
+$light-secondary: #a4a8d4;
 $light-accent: #eea30f;
 $light-border: #d1e0d3;
-$light-link: #064b3f;
+$light-link: #0a6c58;
 
 /* DARK THEME*/
 $dark-background: #0d0d1b;
@@ -16,6 +16,12 @@ $dark-accent: #fbcf00;
 $dark-border: #2a2a3d;
 $dark-link: #ffcc00;
 
+/*STATE COLORS*/
+$hover-background: lighten($light-primary, 10%);
+$hover-text: darken($light-text, 10%);
+$focus-background: lighten($light-secondary, 10%);
+$focus-text: darken($light-text, 20%);
+
 /* FONTS*/
 $font-body: "Inter", sans-serif;
 $font-headings-light: "Playfair Display", serif;
@@ -23,7 +29,7 @@ $font-headings-dark: "Oswald", sans-serif;
 
 /* SPACING*/
 $spacing-small: 8px;
-$spacing-base: 16px;
+$spacing-medium: 16px;
 $spacing-large: 32px;
 $spacing-extra-large: 64px;
 $border-radius: 4px;
@@ -34,12 +40,6 @@ $transition-duration: 0.3s;
 /*SHADOWS*/
 $shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
 $shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-/*STATE COLORS*/
-$hover-background: lighten($light-primary, 10%);
-$hover-text: darken($light-text, 10%);
-$focus-background: lighten($light-secondary, 10%);
-$focus-text: darken($light-text, 20%);
 
 /*BORDERS*/
 $border-light: 1px solid $light-border;
