@@ -5,6 +5,10 @@ header {
    .navbar {
       padding: $spacing-small $spacing-medium;
 
+      .navbar-collapse {
+         justify-content: flex-end;
+      }
+
       .navbar-brand {
          font-family: $font-headings-light;
          font-weight: 500;
