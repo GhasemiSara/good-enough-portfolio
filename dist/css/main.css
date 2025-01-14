@@ -3,9 +3,9 @@
 /*STATE COLORS*/
 /* FONTS*/
 /* SPACING*/
+/*BORDERS*/
 /*TRANSITIONS*/
 /*SHADOWS*/
-/*BORDERS*/
 * {
   margin: 0;
   padding: 0;
@@ -148,4 +148,47 @@ footer nav li a:hover {
 }
 footer .copyright {
   text-align: center;
+}
+
+/*BUTTONS*/
+.btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.btn:hover, .btn:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #0b2005;
+}
+.btn.btn-primary {
+  background-color: #72b25f;
+  border: 1px solid #5a9648;
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background-color: #90c381;
+  color: black;
+}
+.btn.btn-primary:active {
+  background-color: #64a750;
+  color: #f0f4f1;
+}
+.btn.btn-secondary {
+  background-color: #a4a8d4;
+  border: 1px solid #8187c4;
+}
+.btn.btn-secondary:hover, .btn.btn-secondary:focus {
+  background-color: #c7c9e4;
+  color: black;
+}
+.btn.btn-secondary:active {
+  background-color: #9397cc;
+  color: #f0f4f1;
 }/*# sourceMappingURL=main.css.map */

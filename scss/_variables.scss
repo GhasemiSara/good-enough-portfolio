@@ -32,7 +32,13 @@ $spacing-small: 8px;
 $spacing-medium: 16px;
 $spacing-large: 32px;
 $spacing-extra-large: 64px;
-$border-radius: 4px;
+
+/*BORDERS*/
+$border-light: 1px solid $light-border;
+$border-dark: 1px solid $dark-border;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius: 20px;
 
 /*TRANSITIONS*/ 
 $transition-duration: 0.3s;
@@ -40,12 +46,6 @@ $transition-duration: 0.3s;
 /*SHADOWS*/
 $shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
 $shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-/*BORDERS*/
-$border-light: 1px solid $light-border;
-$border-dark: 1px solid $dark-border;
-$border-radius-md: 8px;
-$border-radius-lg: 12px;
 
 $theme-light: (
    background: $light-background,

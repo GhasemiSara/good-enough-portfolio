@@ -1,0 +1,50 @@
+/*BUTTONS*/
+.btn {
+   padding: $spacing-small $spacing-medium;
+   border-radius: $border-radius;
+   font-weight: 600;
+   text-align: center;
+   box-shadow: $shadow-light;
+   transition: box-shadow $transition-duration ease-in-out, background-color $transition-duration ease-in-out, color $transition-duration ease-in-out, transform $transition-duration ease-in-out;
+
+   &:hover, &:focus{
+      transform: translateY(-2px);
+      box-shadow: $shadow-dark;
+   }
+
+   &:active {
+      transform: translateY(0px);
+      box-shadow: $shadow-dark;
+      color: $light-text;
+   }
+
+   &.btn-primary {
+      background-color: $light-primary;
+      border: 1px solid darken($light-primary, 10%);
+
+      &:hover, &:focus {
+         background-color: lighten($light-primary, 10%);
+         color: darken($light-text, 10%);
+      }
+
+      &:active {
+         background-color: darken($light-primary, 5%);
+         color: $light-background;
+      }
+   }
+   
+   &.btn-secondary {
+      background-color: $light-secondary;
+      border: 1px solid darken($light-secondary, 10%);
+
+      &:hover, &:focus {
+         background-color: lighten($light-secondary, 10%);
+         color: darken($light-text, 10%);
+      }
+
+      &:active {
+         background-color: darken($light-secondary, 5%);
+         color: $light-background;
+      }
+   }
+}
