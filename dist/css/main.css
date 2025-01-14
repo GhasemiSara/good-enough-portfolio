@@ -32,8 +32,10 @@ p {
 a {
   color: #0a6c58;
   text-decoration: none;
+  cursor: pointer;
 }
 
+/*HEADER*/
 header {
   background-color: #f0f4f1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -70,4 +72,80 @@ header .navbar .navbar-nav .nav-link {
 header .navbar .navbar-nav .nav-link:hover {
   color: black;
   background-color: #90c381;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #f0f4f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer .row {
+  padding: 32px 16px;
+}
+footer p {
+  font-size: 0.9rem;
+  color: #0b2005;
+  margin: 0;
+  padding: 8px 0;
+  font-weight: 400;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+footer .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #72b25f;
+  transition: color 0.3s ease-in-out;
+}
+footer .navbar-brand:hover {
+  color: #457338;
+}
+footer .location {
+  display: flex;
+  align-items: center;
+}
+footer .location img {
+  width: 20px;
+  height: 20px;
+}
+footer .social-icons {
+  margin: 0;
+  padding: 0;
+}
+footer .social-icons ul {
+  display: flex;
+  gap: 8px;
+}
+footer .social-icons ul img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+footer .social-icons ul img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer nav {
+  padding: 8px 0;
+}
+footer nav li {
+  padding: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+footer nav li:hover {
+  background-color: #90c381;
+  color: black;
+}
+footer nav li a {
+  transition: color 0.3s ease-in-out;
+}
+footer nav li a:hover {
+  color: black;
+}
+footer .copyright {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
