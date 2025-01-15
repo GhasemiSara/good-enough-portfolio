@@ -191,4 +191,59 @@ footer .copyright {
 .btn.btn-secondary:active {
   background-color: #9397cc;
   color: #f0f4f1;
+}
+
+/*PROJECT CARDS*/
+.card {
+  margin: 16px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card .card-body {
+  padding: 16px;
+}
+.card .card-body .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.card .card-body .card-text {
+  margin-bottom: 8px;
+}
+.card .card-body .d-flex {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card .card-body .badge {
+  padding: 8px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+}
+.card .card-body .btn-link {
+  font-weight: 600;
+  color: #0a6c58;
+  margin-top: 16px;
+  transition: color 0.3s ease-in-out;
+}
+.card .card-body .btn-link:hover {
+  color: #063d32;
+}
+
+/*LANDING PAGE (index.html)*/
+.view-all {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.view-all a {
+  color: #0a6c58;
+}
+.view-all a:hover {
+  color: #063d32;
 }/*# sourceMappingURL=main.css.map */

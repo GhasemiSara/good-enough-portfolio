@@ -1,0 +1,13 @@
+/*LANDING PAGE (index.html)*/
+.view-all {
+   margin-top: $spacing-large;
+   display: flex;
+   justify-content: center;
+   
+   a {
+      color: $light-link;
+      &:hover {
+         color: darken($light-link, 10%);
+      }
+   }
+}

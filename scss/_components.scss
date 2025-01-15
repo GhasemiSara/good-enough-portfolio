@@ -48,3 +48,54 @@
       }
    }
 }
+
+/*PROJECT CARDS*/
+.card {
+   margin: $spacing-medium;
+   border: none;
+   border-radius: $border-radius-lg;
+   box-shadow: $shadow-light;
+   overflow: hidden;
+   transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
+
+   &:hover {
+      transform: translateY(-5px);
+      box-shadow: $shadow-dark;
+   }
+
+   .card-body {
+      padding: $spacing-medium;
+
+      .card-title {
+         font-size: 1.5rem;
+         margin-bottom: $spacing-small;
+      }
+
+      .card-text {
+         margin-bottom: $spacing-small;
+      }
+
+      .d-flex {
+         flex-wrap: wrap;
+         gap: $spacing-small;
+      }
+
+      .badge {
+         padding: $spacing-small;
+         font-size: 0.8rem;
+         border-radius: $border-radius-md;
+   
+      }
+
+      .btn-link {
+         font-weight: 600;
+         color: $light-link;
+         margin-top: $spacing-medium;
+         transition: color $transition-duration ease-in-out;
+
+         &:hover {
+            color: darken($light-link, 10%);
+         }
+      } 
+   }
+}
