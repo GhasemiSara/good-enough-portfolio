@@ -236,14 +236,23 @@ footer .copyright {
 }
 
 /*LANDING PAGE (index.html)*/
-.view-all {
+/*Hero*/
+/*Projects*/
+#projects .view-all {
   margin-top: 32px;
   display: flex;
   justify-content: center;
 }
-.view-all a {
+#projects .view-all a {
   color: #0a6c58;
 }
-.view-all a:hover {
+#projects .view-all a:hover {
   color: #063d32;
+}
+
+/*About*/
+#about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */

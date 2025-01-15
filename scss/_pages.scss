@@ -1,13 +1,28 @@
 /*LANDING PAGE (index.html)*/
-.view-all {
-   margin-top: $spacing-large;
-   display: flex;
-   justify-content: center;
-   
-   a {
-      color: $light-link;
-      &:hover {
-         color: darken($light-link, 10%);
+/*Hero*/
+
+/*Projects*/
+#projects {
+   .view-all {
+      margin-top: $spacing-large;
+      display: flex;
+      justify-content: center;
+      
+      a {
+         color: $light-link;
+         &:hover {
+            color: darken($light-link, 10%);
+         }
       }
+   }
+}
+
+/*About*/
+#about {
+   
+   img {
+      max-width: 100%;
+      height: auto;
+      border-radius: $border-radius-md;
    }
 }
