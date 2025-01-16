@@ -27,17 +27,19 @@
 
       &:hover, &:focus {
          background-color: lighten($light-secondary, 10%);
+         color: $light-text;
       }
 
       &:active {
          background-color: darken($light-secondary, 5%);
+         color: $light-background;
       }
    }
 }
 
 /*PROJECT CARDS*/
 .card {
-   margin: $spacing-medium;
+   margin: $spacing-small;
    border: none;
    border-radius: $border-radius-lg;
    box-shadow: $shadow-light;
@@ -50,7 +52,7 @@
    }
 
    .card-body {
-      padding: $spacing-medium;
+      padding: $spacing-large;
 
       .card-title {
          font-size: 1.5rem;
@@ -70,7 +72,21 @@
          padding: $spacing-small;
          font-size: 0.8rem;
          border-radius: $border-radius-md;
-   
+
+         &.badge-pr {
+            background-color: rgba($light-primary, 0.6);
+            color: $light-text;
+         }
+
+         &.badge-sc {
+            background-color: rgba($light-secondary, 0.6);
+            color: $light-text;
+         }
+
+         &.badge-ac {
+            background-color: rgba($light-accent, 0.6);
+            color: $light-text;
+         }
       }
 
       .btn-link {
@@ -78,6 +94,8 @@
          color: $light-link;
          margin-top: $spacing-medium;
          transition: color $transition-duration ease-in-out;
+         display: flex;
+         justify-content: flex-end;
 
          &:hover {
             color: darken($light-link, 10%);

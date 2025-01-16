@@ -186,14 +186,16 @@ footer .copyright {
 }
 .btn.btn-secondary:hover, .btn.btn-secondary:focus {
   background-color: #c7c9e4;
+  color: #0b2005;
 }
 .btn.btn-secondary:active {
   background-color: #9397cc;
+  color: #f0f4f1;
 }
 
 /*PROJECT CARDS*/
 .card {
-  margin: 16px;
+  margin: 8px;
   border: none;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -205,7 +207,7 @@ footer .copyright {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .card .card-body {
-  padding: 16px;
+  padding: 32px;
 }
 .card .card-body .card-title {
   font-size: 1.5rem;
@@ -223,11 +225,25 @@ footer .copyright {
   font-size: 0.8rem;
   border-radius: 8px;
 }
+.card .card-body .badge.badge-pr {
+  background-color: rgba(114, 178, 95, 0.6);
+  color: #0b2005;
+}
+.card .card-body .badge.badge-sc {
+  background-color: rgba(164, 168, 212, 0.6);
+  color: #0b2005;
+}
+.card .card-body .badge.badge-ac {
+  background-color: rgba(238, 163, 15, 0.6);
+  color: #0b2005;
+}
 .card .card-body .btn-link {
   font-weight: 600;
   color: #0a6c58;
   margin-top: 16px;
   transition: color 0.3s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
 }
 .card .card-body .btn-link:hover {
   color: #063d32;
