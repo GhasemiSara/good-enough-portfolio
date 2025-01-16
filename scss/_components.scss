@@ -4,19 +4,7 @@
    border-radius: $border-radius;
    font-weight: 600;
    text-align: center;
-   box-shadow: $shadow-light;
-   transition: box-shadow $transition-duration ease-in-out, background-color $transition-duration ease-in-out, color $transition-duration ease-in-out, transform $transition-duration ease-in-out;
-
-   &:hover, &:focus{
-      transform: translateY(-2px);
-      box-shadow: $shadow-dark;
-   }
-
-   &:active {
-      transform: translateY(0px);
-      box-shadow: $shadow-dark;
-      color: $light-text;
-   }
+   @include button-transform;
 
    &.btn-primary {
       background-color: $light-primary;
@@ -24,12 +12,10 @@
 
       &:hover, &:focus {
          background-color: lighten($light-primary, 10%);
-         color: darken($light-text, 10%);
       }
 
       &:active {
          background-color: darken($light-primary, 5%);
-         color: $light-background;
       }
    }
    
@@ -39,12 +25,10 @@
 
       &:hover, &:focus {
          background-color: lighten($light-secondary, 10%);
-         color: darken($light-text, 10%);
       }
 
       &:active {
          background-color: darken($light-secondary, 5%);
-         color: $light-background;
       }
    }
 }

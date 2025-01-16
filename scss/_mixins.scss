@@ -15,12 +15,13 @@
    &:hover, &:focus {
       transform: translateY(-2px);
       box-shadow: $shadow-dark;
+      color: darken($light-text, 10%);
    }
 
    &:active {
       transform: translateY(0px);
       box-shadow: $shadow-dark;
-      color: $light-text;
+      color: $light-background;
    }
 }
 
