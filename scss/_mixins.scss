@@ -1,0 +1,34 @@
+/*Box Shadow to dark + transition*/
+@mixin box-shadow($shadow: $shadow-light) {
+   box-shadow: $shadow;
+   transition: box-shadow $transition-duration ease-in-out;
+
+   &:hover {
+      box-shadow: $shadow-dark;
+   }
+}
+
+/*Button transform (raised on hover and pressed on active + colors)*/
+@mixin button-transform {
+   transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
+
+   &:hover, &:focus {
+      transform: translateY(-2px);
+      box-shadow: $shadow-dark;
+   }
+
+   &:active {
+      transform: translateY(0px);
+      box-shadow: $shadow-dark;
+   }
+}
+
+/*Social Icons Transform*/
+@mixin transform-scale {
+   transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
+
+   &:hover {
+      transform: scale(1.1);
+      box-shadow: $shadow-light;
+   }
+}
