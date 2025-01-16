@@ -101,12 +101,7 @@ footer {
          img {
             width: 40px;
             height: 40px;
-            transition: transform $transition-duration ease-in-out;
-
-            &:hover {
-               transform: scale(1.1);
-               box-shadow: $shadow-light;
-            }
+            @include transform-scale;
          }
       }
    }

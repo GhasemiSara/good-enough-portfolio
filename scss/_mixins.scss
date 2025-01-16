@@ -1,27 +1,15 @@
-/*Box Shadow to dark + transition*/
-@mixin box-shadow($shadow: $shadow-light) {
-   box-shadow: $shadow;
-   transition: box-shadow $transition-duration ease-in-out;
-
-   &:hover {
-      box-shadow: $shadow-dark;
-   }
-}
-
-/*Button transform (raised on hover and pressed on active + colors)*/
+/*Button transform*/
 @mixin button-transform {
    transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out, background-color $transition-duration ease-in-out, color $transition-duration ease-in-out;
 
    &:hover, &:focus {
       transform: translateY(-2px);
       box-shadow: $shadow-dark;
-      color: darken($light-text, 10%);
    }
 
    &:active {
       transform: translateY(0px);
       box-shadow: $shadow-dark;
-      color: $light-background;
    }
 }
 

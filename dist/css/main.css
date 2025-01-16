@@ -6,8 +6,7 @@
 /*BORDERS*/
 /*TRANSITIONS*/
 /*SHADOWS*/
-/*Box Shadow to dark + transition*/
-/*Button transform (raised on hover and pressed on active + colors)*/
+/*Button transform*/
 /*Social Icons Transform*/
 * {
   margin: 0;
@@ -126,7 +125,7 @@ footer .social-icons ul {
 footer .social-icons ul img {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 footer .social-icons ul img:hover {
   transform: scale(1.1);
@@ -164,26 +163,26 @@ footer .copyright {
 .btn:hover, .btn:focus {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  color: black;
 }
 .btn:active {
   transform: translateY(0px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  color: #f0f4f1;
 }
 .btn.btn-primary {
   background-color: #72b25f;
   border: 1px solid #5a9648;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus {
-  background-color: #90c381;
+  background-color: #81ba70;
+  color: #0b2005;
 }
 .btn.btn-primary:active {
   background-color: #64a750;
+  color: #f0f4f1;
 }
 .btn.btn-secondary {
   background-color: #a4a8d4;
-  border: 1px solid #8187c4;
+  border: 1px solid #9397cc;
 }
 .btn.btn-secondary:hover, .btn.btn-secondary:focus {
   background-color: #c7c9e4;
@@ -254,4 +253,9 @@ footer .copyright {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*CONTACT PAGE (contact.html)*/
+/*Hero*/
+/*Social Media Links*/
+/*Add transform-scale mixin to icons (img)*//*# sourceMappingURL=main.css.map */

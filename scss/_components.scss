@@ -11,17 +11,19 @@
       border: 1px solid darken($light-primary, 10%);
 
       &:hover, &:focus {
-         background-color: lighten($light-primary, 10%);
+         background-color: lighten($light-primary, 5%);
+         color: $light-text;
       }
 
       &:active {
          background-color: darken($light-primary, 5%);
+         color: $light-background;
       }
    }
    
    &.btn-secondary {
       background-color: $light-secondary;
-      border: 1px solid darken($light-secondary, 10%);
+      border: 1px solid darken($light-secondary, 5%);
 
       &:hover, &:focus {
          background-color: lighten($light-secondary, 10%);
