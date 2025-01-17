@@ -35,11 +35,28 @@
          color: $light-background;
       }
    }
+
+   &.btn-accent {
+      background-color: $light-background;
+      border: 2px solid $light-accent;
+
+      &:hover, &:focus {
+         background-color: $light-accent;
+         color: $light-text;
+      }
+
+      &:active {
+         background-color: darken($light-accent, 10%);
+         color: $light-text;
+         border-color: darken($light-accent, 10%);
+      }
+   }
 }
 
 /*PROJECT CARDS*/
 .card {
    margin: $spacing-small;
+   background-color: $light-background;
    border: none;
    border-radius: $border-radius-lg;
    box-shadow: $shadow-light;
@@ -72,34 +89,13 @@
          padding: $spacing-small;
          font-size: 0.8rem;
          border-radius: $border-radius-md;
-
-         &.badge-pr {
-            background-color: rgba($light-primary, 0.6);
-            color: $light-text;
-         }
-
-         &.badge-sc {
-            background-color: rgba($light-secondary, 0.6);
-            color: $light-text;
-         }
-
-         &.badge-ac {
-            background-color: rgba($light-accent, 0.6);
-            color: $light-text;
-         }
+         @include badge-styles;
       }
 
-      .btn-link {
-         font-weight: 600;
-         color: $light-link;
-         margin-top: $spacing-medium;
-         transition: color $transition-duration ease-in-out;
+      .view-project {
+         margin-top: $spacing-large;
          display: flex;
          justify-content: flex-end;
-
-         &:hover {
-            color: darken($light-link, 10%);
-         }
-      } 
+      }
    }
 }

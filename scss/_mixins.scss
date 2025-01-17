@@ -1,6 +1,6 @@
-/*Button transform*/
+/*Button transform: raised button with box shadow, border background-color and color transition*/
 @mixin button-transform {
-   transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out, background-color $transition-duration ease-in-out, color $transition-duration ease-in-out;
+   transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out, background-color $transition-duration ease-in-out, color $transition-duration ease-in-out, border $transition-duration ease-in-out;
 
    &:hover, &:focus {
       transform: translateY(-2px);
@@ -10,6 +10,24 @@
    &:active {
       transform: translateY(0px);
       box-shadow: $shadow-dark;
+   }
+}
+
+/*Badge colors*/
+@mixin badge-styles {
+   &.badge-pr {
+      background-color: rgba($light-primary, 0.6);
+      color: $light-text;
+   }
+
+   &.badge-sc {
+      background-color: rgba($light-secondary, 0.6);
+      color: $light-text;
+   }
+
+   &.badge-ac {
+      background-color: rgba($light-accent, 0.6);
+      color: $light-text;
    }
 }
 
