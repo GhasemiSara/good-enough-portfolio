@@ -258,6 +258,11 @@ footer .copyright {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 767.98px) {
+  .card .card-body .view-project {
+    justify-content: center;
+  }
+}
 
 /*LANDING PAGE (index.html)*/
 /*Hero*/

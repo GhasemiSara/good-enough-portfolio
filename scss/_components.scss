@@ -96,6 +96,10 @@
          margin-top: $spacing-large;
          display: flex;
          justify-content: flex-end;
+
+         @include mobile {
+            justify-content: center;
+         }
       }
    }
 }
