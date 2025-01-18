@@ -9,6 +9,7 @@
 /*Button transform: raised button with box shadow, border background-color and color transition*/
 /*Badge colors*/
 /*Social Icons Transform*/
+/*BREAKPOINT MIXINS*/
 * {
   margin: 0;
   padding: 0;
@@ -260,6 +261,24 @@ footer .copyright {
 
 /*LANDING PAGE (index.html)*/
 /*Hero*/
+#hero {
+  margin: 64px auto;
+}
+#hero h1 {
+  font-size: 2rem;
+}
+#hero .row {
+  padding: 32px;
+  align-items: center;
+}
+#hero .row .d-flex {
+  gap: 1rem;
+  margin-top: 8px;
+}
+#hero .row .col-12 {
+  margin-top: 32px;
+}
+
 /*Projects*/
 #projects .view-all {
   margin-top: 32px;
@@ -274,12 +293,16 @@ footer .copyright {
 }
 
 /*About*/
+#about {
+  margin: 64px auto;
+}
 #about img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 90px;
 }
 
+/*Call to Action*/
 /*CONTACT PAGE (contact.html)*/
 /*Hero*/
 /*Social Media Links*/

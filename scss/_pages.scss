@@ -1,5 +1,26 @@
 /*LANDING PAGE (index.html)*/
 /*Hero*/
+#hero {
+   margin: $spacing-extra-large auto;
+   
+   h1 {
+      font-size: 2rem;
+   }
+   
+   .row {
+      padding: $spacing-large;
+      align-items: center;
+
+      .d-flex {
+         gap: 1rem;
+         margin-top: $spacing-small;
+      }
+
+      .col-12 {
+         margin-top: $spacing-large;
+      }
+   }
+}
 
 /*Projects*/
 #projects {
@@ -19,13 +40,15 @@
 
 /*About*/
 #about {
-   
+   margin: $spacing-extra-large auto;
    img {
       max-width: 100%;
       height: auto;
-      border-radius: $border-radius-md;
+      border-radius: 90px;
    }
 }
+
+/*Call to Action*/
 
 /*CONTACT PAGE (contact.html)*/
 /*Hero*/

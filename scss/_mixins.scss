@@ -40,3 +40,22 @@
       box-shadow: $shadow-light;
    }
 }
+
+/*BREAKPOINT MIXINS*/
+@mixin mobile {
+   @media (min-width: 0) {
+      @content;
+   }
+}
+
+@mixin md {
+   @media (min-width: 768px) {
+      @content;
+   }
+}
+
+@mixin lg {
+   @media (min-width: 992px) {
+      @content;
+   }
+}
