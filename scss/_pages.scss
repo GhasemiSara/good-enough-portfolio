@@ -1,10 +1,11 @@
 /*LANDING PAGE (index.html)*/
 /*Hero*/
 #hero {
-   margin: $spacing-extra-large auto;
+   margin: $spacing-large auto;
    
    h1 {
-      font-size: 2rem;
+      font-size: 3rem;
+      font-style: italic;
    }
    
    .row {
@@ -24,23 +25,41 @@
 
 /*Projects*/
 #projects {
+   padding: $spacing-extra-large $spacing-large;
+   background-color: $light-primary;
+
+   .section-heading {
+      text-align: center;
+      color: $light-background;
+      
+      h2 {
+         font-weight: 500;
+         font-size: 2rem;
+         font-style: italic;
+      }
+   }
+
+
+   .card {
+      border: $dark-border;
+   }
+
    .view-all {
       margin-top: $spacing-large;
       display: flex;
       justify-content: center;
       
-      a {
-         color: $light-link;
-         &:hover {
-            color: darken($light-link, 10%);
-         }
-      }
    }
 }
 
 /*About*/
 #about {
    margin: $spacing-extra-large auto;
+
+   ul {
+      margin-top: $spacing-large;
+   }
+   
    img {
       max-width: 100%;
       height: auto;

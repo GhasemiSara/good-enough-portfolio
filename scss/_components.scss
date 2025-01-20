@@ -37,12 +37,10 @@
    }
 
    &.btn-accent {
-      background-color: $light-background;
       border: 2px solid $light-accent;
 
       &:hover, &:focus {
          background-color: $light-accent;
-         color: $light-text;
       }
 
       &:active {

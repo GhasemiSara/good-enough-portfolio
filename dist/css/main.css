@@ -195,12 +195,10 @@ footer .copyright {
   color: #f0f4f1;
 }
 .btn.btn-accent {
-  background-color: #f0f4f1;
   border: 2px solid #eea30f;
 }
 .btn.btn-accent:hover, .btn.btn-accent:focus {
   background-color: #eea30f;
-  color: #0b2005;
 }
 .btn.btn-accent:active {
   background-color: #be820c;
@@ -267,10 +265,11 @@ footer .copyright {
 /*LANDING PAGE (index.html)*/
 /*Hero*/
 #hero {
-  margin: 64px auto;
+  margin: 32px auto;
 }
 #hero h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-style: italic;
 }
 #hero .row {
   padding: 32px;
@@ -285,21 +284,34 @@ footer .copyright {
 }
 
 /*Projects*/
+#projects {
+  padding: 64px 32px;
+  background-color: #72b25f;
+}
+#projects .section-heading {
+  text-align: center;
+  color: #f0f4f1;
+}
+#projects .section-heading h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+}
+#projects .card {
+  border: #2a2a3d;
+}
 #projects .view-all {
   margin-top: 32px;
   display: flex;
   justify-content: center;
 }
-#projects .view-all a {
-  color: #0a6c58;
-}
-#projects .view-all a:hover {
-  color: #063d32;
-}
 
 /*About*/
 #about {
   margin: 64px auto;
+}
+#about ul {
+  margin-top: 32px;
 }
 #about img {
   max-width: 100%;
