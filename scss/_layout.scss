@@ -4,22 +4,31 @@ header {
    box-shadow: $shadow-light;
 
    .navbar {
-      padding: $spacing-small $spacing-medium;
+      padding: $spacing-medium $spacing-extra-large;
 
-      .navbar-collapse {
-         justify-content: flex-end;
+      @include mobile {
+         padding: $spacing-small $spacing-medium;
       }
 
-      .navbar-brand {
-         font-family: $font-headings-light;
-         font-weight: 500;
-         font-size: 1.75rem;
-         padding: 0 $spacing-small;
-         color: $light-primary;
-         transition: color $transition-duration ease-in-out;
-
-         &:hover {
-            color: darken($light-primary, 20%);
+      .logo-container {
+         display: flex;
+         align-items: center;
+         
+         img {
+            height: 40px;
+         }
+         
+         .navbar-brand {
+            font-family: $font-headings-light;
+            font-weight: 600;
+            font-size: 1.65rem;
+            padding-left: $spacing-medium;
+            color: $light-primary;
+            transition: color $transition-duration ease-in-out;
+            
+            &:hover {
+               color: darken($light-primary, 15%);
+            }
          }
       }
 
@@ -28,13 +37,28 @@ header {
          box-shadow: none;
          padding: $spacing-small;
       }
+      
+      @include lg {
+         #navbarNav {
+            justify-content: flex-end;
 
+            a {
+               transition: color $transition-duration ease-in-out;
+               
+               &:hover {
+               background-color: $light-background;
+               color: $light-secondary;
+               }
+            }
+         }
+      }
+      
       .navbar-nav {
-         margin-left: 0;
          font-size: 1.1rem;
-
+         
          .nav-link {
             padding: $spacing-small $spacing-medium;
+            transition: color $transition-duration ease-in-out, background-color $transition-duration ease-in-out;
             
             &:hover {
                color: $hover-text;
@@ -48,10 +72,13 @@ header {
 /*FOOTER*/
 footer {
    background-color: $light-background;
-   box-shadow: $shadow-light;
 
    .row {
-      padding: $spacing-large $spacing-medium;
+      padding: $spacing-medium;
+   }
+
+   .footer-content {
+      padding: $spacing-large ;
    }
 
    p {
@@ -60,6 +87,7 @@ footer {
       margin: 0;
       padding: $spacing-small 0;
       font-weight: 400;
+      font-style: italic;
    }
 
    ul {
@@ -67,16 +95,26 @@ footer {
       margin: 0;
       list-style: none;
    }
-   
-   .navbar-brand {
-      font-family: $font-headings-light;
-      font-weight: 500;
-      font-size: 1.75rem;
-      color: $light-primary;
-      transition: color $transition-duration ease-in-out;
-   
-      &:hover {
-         color: darken($light-primary, 20%);
+
+   .logo-container {
+      display: flex;
+      align-items: center;
+      
+      img {
+         height: 40px;
+      }
+      
+      .navbar-brand {
+         font-family: $font-headings-light;
+         font-weight: 500;
+         font-size: 1.75rem;
+         color: $light-primary;
+         transition: color $transition-duration ease-in-out;
+         padding-left: $spacing-small;
+         
+         &:hover {
+            color: darken($light-primary, 15%);
+         }
       }
    }
 
@@ -115,7 +153,6 @@ footer {
          
          &:hover {
             background-color: $hover-background;
-            color: $hover-text;
          }
 
          a {

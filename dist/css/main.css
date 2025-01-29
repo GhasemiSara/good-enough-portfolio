@@ -45,33 +45,54 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 header .navbar {
-  padding: 8px 16px;
+  padding: 16px 64px;
 }
-header .navbar .navbar-collapse {
-  justify-content: flex-end;
+@media (max-width: 767.98px) {
+  header .navbar {
+    padding: 8px 16px;
+  }
 }
-header .navbar .navbar-brand {
+header .navbar .logo-container {
+  display: flex;
+  align-items: center;
+}
+header .navbar .logo-container img {
+  height: 40px;
+}
+header .navbar .logo-container .navbar-brand {
   font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 1.75rem;
-  padding: 0 8px;
+  font-weight: 600;
+  font-size: 1.65rem;
+  padding-left: 16px;
   color: #72b25f;
   transition: color 0.3s ease-in-out;
 }
-header .navbar .navbar-brand:hover {
-  color: #457338;
+header .navbar .logo-container .navbar-brand:hover {
+  color: #508540;
 }
 header .navbar .navbar-toggler {
   border: none;
   box-shadow: none;
   padding: 8px;
 }
+@media (min-width: 992px) {
+  header .navbar #navbarNav {
+    justify-content: flex-end;
+  }
+  header .navbar #navbarNav a {
+    transition: color 0.3s ease-in-out;
+  }
+  header .navbar #navbarNav a:hover {
+    background-color: #f0f4f1;
+    color: #a4a8d4;
+  }
+}
 header .navbar .navbar-nav {
-  margin-left: 0;
   font-size: 1.1rem;
 }
 header .navbar .navbar-nav .nav-link {
   padding: 8px 16px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 header .navbar .navbar-nav .nav-link:hover {
   color: black;
@@ -81,10 +102,12 @@ header .navbar .navbar-nav .nav-link:hover {
 /*FOOTER*/
 footer {
   background-color: #f0f4f1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 footer .row {
-  padding: 32px 16px;
+  padding: 16px;
+}
+footer .footer-content {
+  padding: 32px;
 }
 footer p {
   font-size: 0.9rem;
@@ -92,21 +115,30 @@ footer p {
   margin: 0;
   padding: 8px 0;
   font-weight: 400;
+  font-style: italic;
 }
 footer ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-footer .navbar-brand {
+footer .logo-container {
+  display: flex;
+  align-items: center;
+}
+footer .logo-container img {
+  height: 40px;
+}
+footer .logo-container .navbar-brand {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 1.75rem;
   color: #72b25f;
   transition: color 0.3s ease-in-out;
+  padding-left: 8px;
 }
-footer .navbar-brand:hover {
-  color: #457338;
+footer .logo-container .navbar-brand:hover {
+  color: #508540;
 }
 footer .location {
   display: flex;
@@ -142,7 +174,6 @@ footer nav li {
 }
 footer nav li:hover {
   background-color: #90c381;
-  color: black;
 }
 footer nav li a {
   transition: color 0.3s ease-in-out;
@@ -215,20 +246,34 @@ footer .copyright {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 992px) {
+  .card {
+    height: 100%;
+  }
+}
 .card .card-body {
   padding: 32px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .card .card-body {
+    justify-content: space-between;
+  }
+}
+.card .card-body .card-title, .card .card-body .card-text, .card .card-body .d-flex {
+  margin-bottom: 8px;
 }
 .card .card-body .card-title {
   font-size: 1.5rem;
-  margin-bottom: 8px;
-}
-.card .card-body .card-text {
-  margin-bottom: 8px;
 }
 .card .card-body .d-flex {
   flex-wrap: wrap;
@@ -265,10 +310,10 @@ footer .copyright {
 /*LANDING PAGE (index.html)*/
 /*Hero*/
 #hero {
-  margin: 32px auto;
+  margin: 16px auto 32px;
 }
 #hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: italic;
 }
 #hero .row {
@@ -297,9 +342,6 @@ footer .copyright {
   font-size: 2rem;
   font-style: italic;
 }
-#projects .card {
-  border: #2a2a3d;
-}
 #projects .view-all {
   margin-top: 32px;
   display: flex;
@@ -310,8 +352,28 @@ footer .copyright {
 #about {
   margin: 64px auto;
 }
-#about ul {
+#about h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+}
+#about h5 {
   margin-top: 32px;
+}
+#about ul {
+  margin-top: 16px;
+  list-style: none;
+  padding-left: 8px;
+}
+#about ul li {
+  background-image: url("https://img.icons8.com/?size=100&id=87608&format=png&color=72b25f");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 30px;
+}
+#about span {
+  font-weight: 600;
 }
 #about img {
   max-width: 100%;
@@ -320,6 +382,16 @@ footer .copyright {
 }
 
 /*Call to Action*/
+#cta h2 {
+  font-style: italic;
+}
+#cta .row {
+  background-color: rgba(240, 244, 241, 0.3);
+}
+#cta .row .text-container {
+  padding: 16px;
+}
+
 /*CONTACT PAGE (contact.html)*/
 /*Hero*/
 /*Social Media Links*/

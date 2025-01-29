@@ -60,22 +60,34 @@
    box-shadow: $shadow-light;
    overflow: hidden;
    transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
-
+   display: flex;
+   flex-direction: column;
+   
    &:hover {
       transform: translateY(-5px);
       box-shadow: $shadow-dark;
    }
+   
+   @include lg {
+      height: 100%;
+   }
 
    .card-body {
       padding: $spacing-large;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
 
-      .card-title {
-         font-size: 1.5rem;
-         margin-bottom: $spacing-small;
+      @include lg {
+         justify-content: space-between;
       }
 
-      .card-text {
+      .card-title, .card-text, .d-flex {
          margin-bottom: $spacing-small;
+      }
+      
+      .card-title {
+         font-size: 1.5rem;
       }
 
       .d-flex {
