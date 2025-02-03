@@ -1,4 +1,6 @@
 /*LANDING PAGE (index.html)*/
+
+
 /*Hero*/
 #hero {
    margin: $spacing-medium auto $spacing-large;
@@ -99,6 +101,83 @@
       }
    }
 }
+
+/*ABOUT PAGE (about.html)*/
+#aboutPage {
+   text-align: center;
+
+   h1 {
+      font-size: 2rem;
+   }
+
+   h2 {
+      font-weight: 500;
+      font-size: 2rem;
+      font-style: italic;
+   }
+
+   p {
+      padding: $spacing-small $spacing-medium 0;
+   }
+
+   .hero {
+      margin: $spacing-large auto $spacing-medium;
+      padding: 0 $spacing-medium;
+   }
+
+   .present {
+      padding: $spacing-medium $spacing-medium $spacing-large;
+      background-color: $light-secondary;
+
+      img {
+         display: block;
+         margin: auto;
+      }
+   }
+
+   .past-future {
+      margin: $spacing-large auto;
+
+      .col-md-6 {
+         padding: $spacing-large $spacing-medium;
+         flex-direction: column;
+      }
+   }
+
+   .values-passions {
+      padding: $spacing-large $spacing-large;
+      
+      span {
+         font-weight: 500;
+      }
+      
+      .d-flex {
+         gap: 1.5rem;
+         
+         img {
+            @include transform-scale;
+            box-shadow: $shadow-light;
+         }
+      }
+      
+      .value-item {
+         flex: 1;
+      }
+      
+      .rounded-circle {
+         height: 10rem;
+      }
+   }
+
+   .cta {
+      margin: $spacing-small auto;
+      padding: $spacing-large $spacing-medium;
+      background-image: url(/dist/assets/images/cta-banner2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
 
 /*CONTACT PAGE (contact.html)*/
 /*Hero*/

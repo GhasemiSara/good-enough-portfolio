@@ -392,6 +392,71 @@ footer .copyright {
   padding: 16px;
 }
 
+/*ABOUT PAGE (about.html)*/
+#aboutPage {
+  text-align: center;
+}
+#aboutPage h1 {
+  font-size: 2rem;
+}
+#aboutPage h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+}
+#aboutPage p {
+  padding: 8px 16px 0;
+}
+#aboutPage .hero {
+  margin: 32px auto 16px;
+  padding: 0 16px;
+}
+#aboutPage .present {
+  padding: 16px 16px 32px;
+  background-color: #a4a8d4;
+}
+#aboutPage .present img {
+  display: block;
+  margin: auto;
+}
+#aboutPage .past-future {
+  margin: 32px auto;
+}
+#aboutPage .past-future .col-md-6 {
+  padding: 32px 16px;
+  flex-direction: column;
+}
+#aboutPage .values-passions {
+  padding: 32px 32px;
+}
+#aboutPage .values-passions span {
+  font-weight: 500;
+}
+#aboutPage .values-passions .d-flex {
+  gap: 1.5rem;
+}
+#aboutPage .values-passions .d-flex img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#aboutPage .values-passions .d-flex img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#aboutPage .values-passions .value-item {
+  flex: 1;
+}
+#aboutPage .values-passions .rounded-circle {
+  height: 10rem;
+}
+#aboutPage .cta {
+  margin: 8px auto;
+  padding: 32px 16px;
+  background-image: url(/dist/assets/images/cta-banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*CONTACT PAGE (contact.html)*/
 /*Hero*/
 /*Social Media Links*/
