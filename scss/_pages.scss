@@ -191,6 +191,7 @@
 
    #heroPortfolio {
       margin: $spacing-large auto $spacing-medium;
+      
       .row {
          padding: 0 $spacing-medium;
          align-items: center;
@@ -199,12 +200,11 @@
       .button-container {
          display: flex;
          gap: $spacing-medium;
-
       }
 
       .illustration {
          margin-top: $spacing-large;
-
+         
          img {
             margin: auto;
             display: block;
@@ -238,46 +238,75 @@
    }
 
    #cv {
-      padding: $spacing-large $spacing-medium;
+      padding: 0 $spacing-medium;
 
       .cv-heading {
          text-align: center;
       }
 
       .cv-container {
-         background-color: $light-accent;
-         padding: $spacing-large $spacing-medium;
+         border: 4px solid $light-accent;
+         border-radius: 10px;
+         
+         .cv-skills {
+            padding: $spacing-large $spacing-medium;
+         }
 
-      }
+         .skill-category {
+            margin-bottom: $spacing-medium;
+            padding: $spacing-small;
+         }
 
-      .download-buttons {
-         gap: $spacing-small;
-         display: flex;
-         margin-top: $spacing-medium;
+         .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $spacing-small;
+         }
 
-         @include mobile {
-            flex-direction: column;
+         .badge {
+            padding: $spacing-small;
+            font-size: 0.8rem;
+            border-radius: $border-radius-md;
+            @include badge-styles;
+         }
+
+         .download-buttons {
+            gap: $spacing-small;
+            display: flex;
+            margin-top: $spacing-medium;
+   
+            @include mobile {
+               flex-direction: column;
+            }
+
+            a {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: $spacing-small;
+            }
+
+            img {
+               height: 1.75rem;
+               width: 1.75rem;
+            }
+         }
+
+         .cv-main {
+            background-color: $light-accent;
+            padding: $spacing-large $spacing-medium;
+
+            h5, h6 {
+               padding-left: $spacing-small;
+            }
+
+            h5 {
+               font-style: italic;
+            }
          }
       }
    }
 }
-
-// #projects {
-//    .row {
-//       align-items: stretch;
-//    }
-
-//    .section-heading {
-//       text-align: center;
-//       color: $light-background;
-//    }
-
-//    .view-all {
-//       margin-top: $spacing-large;
-//       display: flex;
-//       justify-content: center;
-//    }
-// }
 
 /*CONTACT PAGE (contact.html)*/
 /*Hero*/

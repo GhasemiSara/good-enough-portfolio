@@ -513,24 +513,73 @@ footer .copyright {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 #portfolioPage #cv {
-  padding: 32px 16px;
+  padding: 0 16px;
 }
 #portfolioPage #cv .cv-heading {
   text-align: center;
 }
 #portfolioPage #cv .cv-container {
-  background-color: #eea30f;
+  border: 4px solid #eea30f;
+  border-radius: 10px;
+}
+#portfolioPage #cv .cv-container .cv-skills {
   padding: 32px 16px;
 }
-#portfolioPage #cv .download-buttons {
+#portfolioPage #cv .cv-container .skill-category {
+  margin-bottom: 16px;
+  padding: 8px;
+}
+#portfolioPage #cv .cv-container .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#portfolioPage #cv .cv-container .badge {
+  padding: 8px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+}
+#portfolioPage #cv .cv-container .badge.badge-pr {
+  background-color: rgba(114, 178, 95, 0.6);
+  color: #0b2005;
+}
+#portfolioPage #cv .cv-container .badge.badge-sc {
+  background-color: rgba(164, 168, 212, 0.6);
+  color: #0b2005;
+}
+#portfolioPage #cv .cv-container .badge.badge-ac {
+  background-color: rgba(238, 163, 15, 0.6);
+  color: #0b2005;
+}
+#portfolioPage #cv .cv-container .download-buttons {
   gap: 8px;
   display: flex;
   margin-top: 16px;
 }
 @media (max-width: 767.98px) {
-  #portfolioPage #cv .download-buttons {
+  #portfolioPage #cv .cv-container .download-buttons {
     flex-direction: column;
   }
+}
+#portfolioPage #cv .cv-container .download-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#portfolioPage #cv .cv-container .download-buttons img {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+#portfolioPage #cv .cv-container .cv-main {
+  background-color: #eea30f;
+  padding: 32px 16px;
+}
+#portfolioPage #cv .cv-container .cv-main h5, #portfolioPage #cv .cv-container .cv-main h6 {
+  padding-left: 8px;
+}
+#portfolioPage #cv .cv-container .cv-main h5 {
+  font-style: italic;
 }
 
 /*CONTACT PAGE (contact.html)*/
