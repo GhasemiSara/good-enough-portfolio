@@ -333,6 +333,9 @@ footer .copyright {
   padding: 64px 32px;
   background-color: #72b25f;
 }
+#projects .row {
+  align-items: stretch;
+}
 #projects .section-heading {
   text-align: center;
   color: #f0f4f1;
@@ -455,6 +458,79 @@ footer .copyright {
   background-image: url(/dist/assets/images/cta-banner2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+#portfolioPage h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+}
+#portfolioPage #heroPortfolio {
+  margin: 32px auto 16px;
+}
+#portfolioPage #heroPortfolio .row {
+  padding: 0 16px;
+  align-items: center;
+}
+#portfolioPage #heroPortfolio .button-container {
+  display: flex;
+  gap: 16px;
+}
+#portfolioPage #heroPortfolio .illustration {
+  margin-top: 32px;
+}
+#portfolioPage #heroPortfolio .illustration img {
+  margin: auto;
+  display: block;
+}
+#portfolioPage #portfolioProjects {
+  padding: 32px;
+  background-color: #a4a8d4;
+}
+#portfolioPage #portfolioProjects .heading {
+  text-align: center;
+}
+#portfolioPage #portfolioSkills {
+  padding: 32px 16px;
+  text-align: center;
+}
+#portfolioPage #portfolioSkills .skill-icons {
+  justify-content: center;
+  gap: 16px;
+}
+#portfolioPage #portfolioSkills .skill-icons img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+  width: 60px;
+  height: 60px;
+}
+#portfolioPage #portfolioSkills .skill-icons img:hover, #portfolioPage #portfolioSkills .skill-icons img:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#portfolioPage #portfolioSkills .skill-icons img:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#portfolioPage #cv {
+  padding: 32px 16px;
+}
+#portfolioPage #cv .cv-heading {
+  text-align: center;
+}
+#portfolioPage #cv .cv-container {
+  background-color: #eea30f;
+  padding: 32px 16px;
+}
+#portfolioPage #cv .download-buttons {
+  gap: 8px;
+  display: flex;
+  margin-top: 16px;
+}
+@media (max-width: 767.98px) {
+  #portfolioPage #cv .download-buttons {
+    flex-direction: column;
+  }
 }
 
 /*CONTACT PAGE (contact.html)*/

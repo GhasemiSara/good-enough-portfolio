@@ -1,6 +1,5 @@
 /*LANDING PAGE (index.html)*/
 
-
 /*Hero*/
 #hero {
    margin: $spacing-medium auto $spacing-large;
@@ -29,6 +28,10 @@
 #projects {
    padding: $spacing-extra-large $spacing-large;
    background-color: $light-primary;
+
+   .row {
+      align-items: stretch;
+   }
 
    .section-heading {
       text-align: center;
@@ -175,9 +178,106 @@
       background-image: url(/dist/assets/images/cta-banner2.png);
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
    }
 }
 
+#portfolioPage {
+   h2 {
+      font-weight: 500;
+      font-size: 2rem;
+      font-style: italic;
+   }
+
+   #heroPortfolio {
+      margin: $spacing-large auto $spacing-medium;
+      .row {
+         padding: 0 $spacing-medium;
+         align-items: center;
+      }
+
+      .button-container {
+         display: flex;
+         gap: $spacing-medium;
+
+      }
+
+      .illustration {
+         margin-top: $spacing-large;
+
+         img {
+            margin: auto;
+            display: block;
+         }
+      }
+   }
+
+   #portfolioProjects {
+      padding: $spacing-large;
+      background-color: $light-secondary;
+
+      .heading {
+         text-align: center;
+      }
+   }
+
+   #portfolioSkills {
+      padding: $spacing-large $spacing-medium;
+      text-align: center;
+
+      .skill-icons {
+         justify-content: center;
+         gap: $spacing-medium;
+
+         img {
+            @include button-transform;
+            width: 60px;
+            height: 60px;
+         }
+      }
+   }
+
+   #cv {
+      padding: $spacing-large $spacing-medium;
+
+      .cv-heading {
+         text-align: center;
+      }
+
+      .cv-container {
+         background-color: $light-accent;
+         padding: $spacing-large $spacing-medium;
+
+      }
+
+      .download-buttons {
+         gap: $spacing-small;
+         display: flex;
+         margin-top: $spacing-medium;
+
+         @include mobile {
+            flex-direction: column;
+         }
+      }
+   }
+}
+
+// #projects {
+//    .row {
+//       align-items: stretch;
+//    }
+
+//    .section-heading {
+//       text-align: center;
+//       color: $light-background;
+//    }
+
+//    .view-all {
+//       margin-top: $spacing-large;
+//       display: flex;
+//       justify-content: center;
+//    }
+// }
 
 /*CONTACT PAGE (contact.html)*/
 /*Hero*/

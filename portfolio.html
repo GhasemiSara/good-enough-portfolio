@@ -27,7 +27,6 @@
 
 </head>
 <body>
-   
    <!-- Header, navigation-->
    <header id="header">
       <nav class="navbar navbar-expand-lg sticky-top">
@@ -57,47 +56,48 @@
       </nav>
    </header>
 
-   <main>
+   <main id="portfolioPage">
       <!--Hero-->
-      <section class="container my-5">
-         <div class="row align-items-center text-center text-md-start">
+      <section id="heroPortfolio" class="container">
+         <div class="row text-center text-md-start">
             <div class="col-md-6">
                <h1>Explore my Projects and CV!</h1>
             </div>
             <!--Description + buttons-->
             <div class="col-md-6">
                <p>Welcome to my portfolio! Take a look at my best web development projects and discover the technologies I use. Let's build something amazing together!</p>
-               <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+               <div class="button-container justify-content-center justify-content-md-start">
                   <a href="#projects" class="btn btn-primary">View Projects</a>
-                  <a href="#cv" class="btn btn-secondary">Download My CV</a>
+                  <a href="#cv" class="btn btn-secondary">Download CV</a>
                </div>
             </div>
             <!--Graphic-->
-            <div class="col-12 mt-4">
-               <img src="https://picsum.photos/800/400" alt="Hero graphic" class="img-fluid mx-auto d-block">
+            <div class="illustration col-12">
+               <img src="dist/assets/images/portfolio-hero-illustration.png" alt="Hero graphic" class="img-fluid">
             </div>
          </div>
       </section>
 
       <!--Projects-->
-      <section id="projects" class="container-fluid">
+      <section id="portfolioProjects" class="container-fluid">
          <!--Title + Description-->
-         <div class="row text-center">
+         <div class="heading row">
             <div class="col-12">
-               <h2>Check Out My Projects!</h2>
-               <p>A collection of my web development projects with more detailed descriptions and links to their respective GitHub repositories.</p>
+               <h2>A Closer Look at My Work</h2>
+               <p>Not all projects are created equal&#8212but that's the beauty of learning! Here you'll find a mix of early experiments and more refined creations, each one reflecting my progress in web development. Some may be simple, others more polished, but they all have a story to tell.</p>
             </div>
          </div>
 
          <!--Cards-->
          <div class="row">
-            <!--Project A-->
+            <!--Hotel Pomelia-->
             <div id="projectA" class="col-12 col-md-6 col-lg-4">
                <div class="card">
                   <img src="dist/assets/images/hotel-pomelia-screenshot.png" alt="Image Project Hotel Pomelia" class="card-img-top">
                   <div class="card-body">
                      <h5 class="card-title">Hotel Pomelia</h5>
-                     <p class="card-text">This is my first ever website, made only with HTML and CSS.</p>
+                     <p class="card-text">My very first website, created as an exercise during my Start2Impact course. A simple yet meaningful project, built entirely with HTML and CSS without any frameworks or external libraries. Since it was my first experience with coding, it was both exciting and frustrating&#8212exciting when things worked, frustrating when they didn't!</p>
+                     <p class="card-text">The result is a static, non-responsive, single-page website, but it marks the beginning of my journey. Looking back, it's incredible to see how much I've improved since then!</p>
                      <div class="d-flex">
                         <span class="badge badge-pr">HTML</span>
                         <span class="badge badge-sc">CSS</span>
@@ -109,13 +109,15 @@
                </div>
             </div>
             
-            <!--Project B-->
+            <!--Portfolio-->
             <div id="projectB" class="col-12 col-md-6 col-lg-4">
                <div class="card">
                   <img src="https://picsum.photos/300" alt="Image Project B" class="card-img-top">
                   <div class="card-body">
-                     <h5 class="card-title">Project B</h5>
-                     <p class="card-text">Detailed description of project B, demonstrating how I solved specific problems or used various frameworks to achieve the desired results.</p>
+                     <h5 class="card-title">My Portfolio</h5>
+                     <p class="card-text">The website you're currently browsing is my first complex project. Unlike my first website, this one features multiple pages, smooth transitions, and a fully responsive design. I used HTML, CSS, Sass, and Bootstrap, which helped me better structure my code and build a more polished website. It's also my first project to be hosted on GitHub.</p>
+                     <p class="card-text">I'm particularly proud of the project cards, which adapt seamlessly to different screen sizes, and the color palette, which I feel represents my style and values well. I chose to organize content across multiple pages rather than creating a single long-scrolling page, making navigation cleaner and more user-friendly.</p>
+                     <p class="card-text">In the future, I plan to add a dark mode toggle, scroll effects, custom illustrations, and transform the project section into an interactive slideshow.</p>
                      <div class="d-flex">
                         <span class="badge badge-pr">HTML</span>
                         <span class="badge badge-sc">CSS</span>
@@ -123,25 +125,26 @@
                         <span class="badge badge-pr">Sass</span>
                      </div>
                      <div class="view-project">
-                        <a href="https://github.com/yourusername/projectB" target="_blank" class="btn btn-accent">View on GitHub →</a>
+                        <a href="https://github.com/GhasemiSara/good-enough-portfolio" target="_blank" class="btn btn-accent">View on GitHub →</a>
                      </div>
                   </div>
                </div>
             </div>
 
-            <!--Project C-->
+            <!--New Project -->
             <div id="projectC" class="col-12 col-md-6 col-lg-4">
                <div class="card">
-                  <img src="https://picsum.photos/300" alt="Image Project X" class="card-img-top">
+                  <img src="dist/assets/images/project-placeholder.png" alt="Image Project" class="card-img-top">
                   <div class="card-body">
-                     <h5 class="card-title">Project C</h5>
-                     <p class="card-text">Description of project C with an explanation of the technology stack used, and what sets this project apart from others in terms of functionality and design.</p>
+                     <h5 class="card-title">New Project</h5>
+                     <p class="card-text">For now, this section is just a teaser, but it will soon feature my next project! Since I'm learning JavaScript, my next work will likely include dynamic interactions for the first time. Once it's ready, I'll make the code available on GitHub, so anyone interested can follow my progress and maybe even give me some feedback.</p>
                      <div class="d-flex">
                         <span class="badge badge-pr">HTML</span>
                         <span class="badge badge-sc">CSS</span>
+                        <span class="badge badge-ac">JavaScript</span>
                      </div>
                      <div class="view-project">
-                        <a href="https://github.com/yourusername/projectC" target="_blank" class="btn btn-accent">View on GitHub →</a>
+                        <a href="#" target="_blank" class="btn btn-accent">View on GitHub →</a>
                      </div>
                   </div>
                </div>
@@ -150,8 +153,8 @@
       </section>
 
       <!--Skills-->
-      <section class="container my-5">
-         <div class="row text-center">
+      <section id="portfolioSkills" class="container">
+         <div class="row">
             <div class="col-12">
                <h2>My Skills & Tools</h2>
                <p>The technologies and tools I use to build modern and efficient web solutions.</p>
@@ -159,74 +162,114 @@
          </div>
 
          <!--Skill Icons-->
-         <div class="row justify-content-center gap-4">
-            <div class="col-4 col-md-2 text-center">
-               <img src="https://img.icons8.com/?size=100&id=VtcsWwcpT4R0&format=png&color=921909" alt="HTML" class="img-fluid" width="60" height="60">
+         <div class="row skill-icons">
+            <div class="col-4 col-md-2">
+               <img src="https://img.icons8.com/?size=100&id=VtcsWwcpT4R0&format=png&color=a4a8d4" alt="HTML" class="img-fluid">
                <p>HTML</p>
             </div>
-            <div class="col-4 col-md-2 text-center">
-               <img src="https://img.icons8.com/?size=100&id=lxevS2TORHqK&format=png&color=921909" alt="CSS" class="img-fluid" width="60" height="60">
+            <div class="col-4 col-md-2">
+               <img src="https://img.icons8.com/?size=100&id=lxevS2TORHqK&format=png&color=a4a8d4" alt="CSS" class="img-fluid">
                <p>CSS</p>
             </div>
-            <div class="col-4 col-md-2 text-center">
-               <img src="https://img.icons8.com/?size=100&id=ek87iHvbzIaL&format=png&color=921909" alt="Bootstrap" class="img-fluid" width="60" height="60">
+            <div class="col-4 col-md-2">
+               <img src="https://img.icons8.com/?size=100&id=ek87iHvbzIaL&format=png&color=a4a8d4" alt="Bootstrap" class="img-fluid">
                <p>Bootstrap</p>
             </div>
-            <div class="col-4 col-md-2 text-center">
-               <img src="https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=921909" alt="GitHub" class="img-fluid" width="60" height="60">
+            <div class="col-4 col-md-2">
+               <img src="https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=a4a8d4" alt="GitHub" class="img-fluid">
                <p>GitHub</p>
             </div>
-            <div class="col-4 col-md-2 text-center">
-               <img src="https://img.icons8.com/?size=100&id=haytDaRfog8X&format=png&color=921909" alt="Sass" class="img-fluid" width="60" height="60">
+            <div class="col-4 col-md-2">
+               <img src="https://img.icons8.com/?size=100&id=haytDaRfog8X&format=png&color=a4a8d4" alt="Sass" class="img-fluid">
                <p>Sass</p>
             </div>
-            <div class="col-4 col-md-2 text-center">
-               <img src="https://img.icons8.com/?size=100&id=Jc94qLv1AAOo&format=png&color=921909" alt="VSCode" class="img-fluid" width="60" height="60">
+            <div class="col-4 col-md-2">
+               <img src="https://img.icons8.com/?size=100&id=Jc94qLv1AAOo&format=png&color=a4a8d4" alt="VSCode" class="img-fluid">
                <p>VSCode</p>
             </div>
          </div>
       </section>
 
       <!--CV-->
-      <section id="cv" class="container my-5">
-         <div class="row text-center">
+      <section id="cv" class="container">
+         <div class="row cv-heading">
             <div class="col-12">
                <h2>My CV</h2>
-               <p>Below you can find details about my education, work experience, and more. You can also download my CV in PDF format.</p>
+               <p>Below you can find an overview of my professional background, education, skills, and personal achievements. I believe in lifelong learning and growth, and each experience contributes to shaping the path I am building. You can also download my CV in PDF format.</p>
             </div>
          </div>
 
-         <div class="row">
+         <div class="row cv-container">
             <!--Left column-->
             <div class="col-md-4">
                <h4>Skills</h4>
                <ul>
-                  <li>Soft Skills: Teamwork, Communication, Problem Solving</li>
-                  <li>Hard Skills: Research, Languages, Front-end Development</li>
-                  <li>Dev/IT Skills: Git, HTML, CSS</li>
-                  <li>Languages: English, Italian, French, Spanish, Farsi</li>
+                  <li><strong>Technical Skills</strong>: HTML, CSS, Bootstrap, Sass, Git, VSCode</li>
+                  <li><strong>Soft Skills</strong>: Teamwork, Communication, Empathy, Adaptability</li>
+                  <li><strong>Languages</strong>: Italian (Native), Farsi (Conversational), English (Fluent), French (Intermediate), Spanish (Intermediate)</li>
+                  <li><strong>Creative Problem Solving</strong>: Passion for designing simple solutions to complex problems</li>
                </ul>
             </div>
 
             <!--Main section-->
             <div class="col-md-8">
-               <h4>Education</h4>
-               <p>Degree in Political, Social and International Science from Alma Mater Studiorum - University of Bologna</p>
-
                <h4>Work Experience</h4>
-               <p>Event Assistant at Biografilm Festival</p>
+               <h5>Pet Sitter</h5>
+               <h6>Rover | July 2022 - Present</h6>
+               <ul>
+                  <li>Managed 20+ clients, built strong relationships, and increased earnings by 250% in 2 years.</li>
+               </ul>
+
+               <h5>Event Assistant</h5>
+               <h6>Biografilm Festival | June 2023</h6>
+               <ul>
+                  <li>Assisted with hospitality and event coordination for VIP guests and industry professionals.</li>
+                  <li>Ensured smooth travel, accommodation, and guest services through problem-solving and teamwork.</li>
+               </ul>
+
+               <h5>Interpreter and Assistant</h5>
+               <h6>Tenuta La Favola | April 2023</h6>
+               <ul>
+                  <li>Provided translation services (IT<>EN, IT<>FR) during VinNatur wine fair.</li>
+                  <li>Supported product promotion and client relationship management.</li>
+               </ul>
+
+               <h5>Marketing and Ceremonial Assistant</h5>
+               <h6>Biografilm Festival | June 2022</h6>
+               <ul>
+                  <li>Assisted with guest and sponsor management during screenings and premieres.</li>
+                  <li>Resolved logistical challenges and contributed to audience coordination at special events.</li>
+               </ul>
+
+               <h5>Volunteer</h5>
+               <h6>CEMEA Occitanie | April 2022</h6>
+               <ul>
+                  <li>Assisted in event coordination, technical support, and communication for FIFE (Festival International du Film d'Éducation).</li>
+                  <li>Organized an "intercultural day" and contributed to promotional materials.</li>
+               </ul>
+               
+               <h4>Education</h4>
+               <h5>Degree in Political, Social and International Science</h5>
+               <h6>Alma Mater Studiorum - University of Bologna | 2017 - 2021</h6>
+               <ul>
+                  <li>Gained a critical perspective on national and international geopolitical dynamics, with in-depth knowledge of historical, social, and economic contexts.</li>
+                  <li>Developed strong research, analytical, and communication skills.</li>
+               </ul>
 
                <h4>Certifications</h4>
-               <p>Certified C1 English Level from Cambridge English</p>
+               <ul>
+                  <li><strong>Full Stack Web Development Master</strong> | Start2Impact (2024 - present)</li>
+                  <li><strong>Diploma de Español como Lengua Extranjera (DELE)</strong> - B2 | Instituto Cervantes (2017)</li>
+                  <li><strong>Certificate of Advanced English (CAE)</strong> - C1 | Cambridge University Press & Assessment English (2016)</li>
+               </ul>
                
-               <div class="mt-3">
+               <div class="download-buttons">
                   <a href="CV_ita.pdf" class="btn btn-primary">Download CV (Italiano)</a>
                   <a href="CV_eng.pdf" class="btn btn-secondary">Download CV (English)</a>
                </div>
             </div>
          </div>
       </section>
-
    </main>
 
    <!--Footer-->
