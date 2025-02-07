@@ -58,7 +58,7 @@
 
    <main id="portfolioPage">
       <!--Hero-->
-      <section id="heroPortfolio" class="container">
+      <section class="container hero-portfolio">
          <div class="row text-center text-md-start">
             <div class="col-md-6">
                <h1>Explore my Projects and CV!</h1>
@@ -79,7 +79,7 @@
       </section>
 
       <!--Projects-->
-      <section id="portfolioProjects" class="container-fluid">
+      <section class="container-fluid portfolio-projects">
          <!--Title + Description-->
          <div class="heading row">
             <div class="col-12">
@@ -103,7 +103,7 @@
                         <span class="badge badge-sc">CSS</span>
                      </div>
                      <div class="view-project">
-                        <a href="https://github.com/yourusername/projectA" target="_blank" class="btn btn-accent">View on GitHub →</a>
+                        <a href="dist/assets/webpages/Hotel Pomelia.html" target="_blank" class="btn btn-accent">View →</a>
                      </div>
                   </div>
                </div>
@@ -112,7 +112,7 @@
             <!--Portfolio-->
             <div id="projectB" class="col-12 col-md-6 col-lg-4">
                <div class="card">
-                  <img src="https://picsum.photos/300" alt="Image Project B" class="card-img-top">
+                  <img src="dist/assets/images/my-portfolio-screenshot.png" alt="Image Project B" class="card-img-top">
                   <div class="card-body">
                      <h5 class="card-title">My Portfolio</h5>
                      <p class="card-text">The website you're currently browsing is my first complex project. Unlike my first website, this one features multiple pages, smooth transitions, and a fully responsive design. I used HTML, CSS, Sass, and Bootstrap, which helped me better structure my code and build a more polished website. It's also my first project to be hosted on GitHub.</p>
@@ -139,13 +139,11 @@
                      <h5 class="card-title">New Project</h5>
                      <p class="card-text">For now, this section is just a teaser, but it will soon feature my next project! Since I'm learning JavaScript, my next work will likely include dynamic interactions for the first time. Once it's ready, I'll make the code available on GitHub, so anyone interested can follow my progress and maybe even give me some feedback.</p>
                      <div class="d-flex">
-                        <span class="badge badge-pr">HTML</span>
-                        <span class="badge badge-sc">CSS</span>
-                        <span class="badge badge-ac">JavaScript</span>
+                        <span class="badge badge-pr">JavaScript</span>
                      </div>
-                     <div class="view-project">
+                     <!-- <div class="view-project">
                         <a href="#" target="_blank" class="btn btn-accent">View on GitHub →</a>
-                     </div>
+                     </div> -->
                   </div>
                </div>
             </div>
@@ -153,7 +151,7 @@
       </section>
 
       <!--Skills-->
-      <section id="portfolioSkills" class="container">
+      <section class="container portfolio-skills">
          <div class="row">
             <div class="col-12">
                <h2>My Skills & Tools</h2>
@@ -164,34 +162,34 @@
          <!--Skill Icons-->
          <div class="row skill-icons">
             <div class="col-4 col-md-2">
-               <img src="https://img.icons8.com/?size=100&id=VtcsWwcpT4R0&format=png&color=a4a8d4" alt="HTML" class="img-fluid">
+               <img src="https://img.icons8.com/?size=100&id=VtcsWwcpT4R0&format=png&color=72b25f" alt="HTML" class="img-fluid">
                <p>HTML</p>
             </div>
             <div class="col-4 col-md-2">
-               <img src="https://img.icons8.com/?size=100&id=lxevS2TORHqK&format=png&color=a4a8d4" alt="CSS" class="img-fluid">
+               <img src="https://img.icons8.com/?size=100&id=lxevS2TORHqK&format=png&color=72b25f" alt="CSS" class="img-fluid">
                <p>CSS</p>
             </div>
             <div class="col-4 col-md-2">
-               <img src="https://img.icons8.com/?size=100&id=ek87iHvbzIaL&format=png&color=a4a8d4" alt="Bootstrap" class="img-fluid">
+               <img src="https://img.icons8.com/?size=100&id=ek87iHvbzIaL&format=png&color=72b25f" alt="Bootstrap" class="img-fluid">
                <p>Bootstrap</p>
             </div>
             <div class="col-4 col-md-2">
-               <img src="https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=a4a8d4" alt="GitHub" class="img-fluid">
+               <img src="https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=72b25f" alt="GitHub" class="img-fluid">
                <p>GitHub</p>
             </div>
             <div class="col-4 col-md-2">
-               <img src="https://img.icons8.com/?size=100&id=haytDaRfog8X&format=png&color=a4a8d4" alt="Sass" class="img-fluid">
+               <img src="https://img.icons8.com/?size=100&id=haytDaRfog8X&format=png&color=72b25f" alt="Sass" class="img-fluid">
                <p>Sass</p>
             </div>
             <div class="col-4 col-md-2">
-               <img src="https://img.icons8.com/?size=100&id=Jc94qLv1AAOo&format=png&color=a4a8d4" alt="VSCode" class="img-fluid">
+               <img src="https://img.icons8.com/?size=100&id=Jc94qLv1AAOo&format=png&color=72b25f" alt="VSCode" class="img-fluid">
                <p>VSCode</p>
             </div>
          </div>
       </section>
 
       <!--CV-->
-      <section id="cv" class="container">
+      <section class="container portfolio-cv">
          <div class="row cv-heading">
             <div class="col-12">
                <h2>My CV</h2>
@@ -200,7 +198,7 @@
          </div>
 
          <div class="row cv-container">
-            <!--Left column-->
+            <!--Skills section-->
             <div class="col-md-4 cv-skills">
                <h4>Skills</h4>
                <div class="skill-category">
@@ -244,41 +242,65 @@
             <!--Main section-->
             <div class="col-md-8 cv-main">
                <h4>Work Experience</h4>
-               <h5>Pet Sitter</h5>
-               <h6>Rover | July 2022 - Present</h6>
-               <ul>
-                  <li>Managed 20+ clients, built strong relationships, and increased earnings by 250% in 2 years.</li>
-               </ul>
-
-               <h5>Event Assistant</h5>
-               <h6>Biografilm Festival | June 2023</h6>
-               <ul>
-                  <li>Assisted with hospitality and event coordination for VIP guests and industry professionals.</li>
-                  <li>Ensured smooth travel, accommodation, and guest services through problem-solving and teamwork.</li>
-               </ul>
-
-               <h5>Interpreter and Assistant</h5>
-               <h6>Tenuta La Favola | April 2023</h6>
-               <ul>
-                  <li>Provided translation services (IT<>EN, IT<>FR) during VinNatur wine fair.</li>
-                  <li>Supported product promotion and client relationship management.</li>
-               </ul>
-
-               <h5>Marketing and Ceremonial Assistant</h5>
-               <h6>Biografilm Festival | June 2022</h6>
-               <ul>
-                  <li>Assisted with guest and sponsor management during screenings and premieres.</li>
-                  <li>Resolved logistical challenges and contributed to audience coordination at special events.</li>
-               </ul>
-
-               <h5>Volunteer</h5>
-               <h6>CEMEA Occitanie | April 2022</h6>
-               <ul>
-                  <li>Assisted in event coordination, technical support, and communication for FIFE (Festival International du Film d'Éducation).</li>
-                  <li>Organized an "intercultural day" and contributed to promotional materials.</li>
-               </ul>
-
-               <hr>
+               <div class="container">
+                  <!-- Work experience timeline -->
+                  <div class="timeline">
+                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                           <h5>Pet Sitter</h5>
+                           <h6>Rover | July 2022 - Present</h6>
+                           <ul>
+                              <li>Managed 20+ clients, built strong relationships, and increased earnings by 250% in 2 years.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                           <h5>Event Assistant</h5>
+                           <h6>Biografilm Festival | June 2023</h6>
+                           <ul>
+                              <li>Assisted with hospitality and event coordination for VIP guests and industry professionals.</li>
+                              <li>Ensured smooth travel, accommodation, and guest services through problem-solving and teamwork.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                           <h5>Interpreter and Assistant</h5>
+                           <h6>Tenuta La Favola | April 2023</h6>
+                           <ul>
+                              <li>Provided translation services (IT<>EN, IT<>FR) during VinNatur wine fair.</li>
+                              <li>Supported product promotion and client relationship management.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                           <h5>Marketing and Ceremonial Assistant</h5>
+                           <h6>Biografilm Festival | June 2022</h6>
+                           <ul>
+                              <li>Assisted with guest and sponsor management during screenings and premieres.</li>
+                              <li>Resolved logistical challenges and contributed to audience coordination at special events.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                           <h5>Volunteer</h5>
+                           <h6>CEMEA Occitanie | April 2022</h6>
+                           <ul>
+                              <li>Assisted in event coordination, technical support, and communication for FIFE (Festival International du Film d'Éducation).</li>
+                              <li>Organized an "intercultural day" and contributed to promotional materials.</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
                
                <h4>Education</h4>
                <h5>Degree in Political, Social and International Science</h5>
@@ -287,8 +309,6 @@
                   <li>Gained a critical perspective on national and international geopolitical dynamics, with in-depth knowledge of historical, social, and economic contexts.</li>
                   <li>Developed strong research, analytical, and communication skills.</li>
                </ul>
-
-               <hr>
                
                <h4>Certifications</h4>
                <ul>

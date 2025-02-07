@@ -182,6 +182,7 @@
    }
 }
 
+/*PORTFOLIO PAGE (portfolio.html)*/
 #portfolioPage {
    h2 {
       font-weight: 500;
@@ -189,7 +190,8 @@
       font-style: italic;
    }
 
-   #heroPortfolio {
+   /*Hero*/
+   .hero-portfolio {
       margin: $spacing-large auto $spacing-medium;
       
       .row {
@@ -212,7 +214,8 @@
       }
    }
 
-   #portfolioProjects {
+   /*Projects*/
+   .portfolio-projects {
       padding: $spacing-large;
       background-color: $light-secondary;
 
@@ -221,7 +224,8 @@
       }
    }
 
-   #portfolioSkills {
+   /*Skills & Tools*/
+   .portfolio-skills {
       padding: $spacing-large $spacing-medium;
       text-align: center;
 
@@ -237,7 +241,8 @@
       }
    }
 
-   #cv {
+   /*Curriculum*/
+   .portfolio-cv {
       padding: 0 $spacing-medium;
 
       .cv-heading {
@@ -247,62 +252,123 @@
       .cv-container {
          border: 4px solid $light-accent;
          border-radius: 10px;
+      }
+
+      /*Skills section*/
+      .cv-skills {
+         padding: $spacing-large $spacing-medium;
+
+         @include lg {
+            padding: $spacing-large;
+         }
+      }
+
+      .skill-category {
+         margin-bottom: $spacing-medium;
+         padding: $spacing-small;
+      }
+
+      .skill-list {
+         display: flex;
+         flex-wrap: wrap;
+         gap: $spacing-small;
+      }
+
+      .badge {
+         padding: $spacing-small;
+         font-size: 0.8rem;
+         border-radius: $border-radius-md;
+         @include badge-styles;
+      }
+
+      /*Main section*/
+      .cv-main {
+         background-color: $light-accent;
+         padding: $spacing-large $spacing-medium;
+
+         @include lg {
+            padding: $spacing-large;
+         }
          
-         .cv-skills {
-            padding: $spacing-large $spacing-medium;
+         h5, h6 {
+            padding-left: $spacing-small;
          }
-
-         .skill-category {
-            margin-bottom: $spacing-medium;
-            padding: $spacing-small;
+         
+         h5 {
+            font-style: italic;
          }
+         
+         h6 {
+            color: lighten($light-text, 5%);
+         }
+         
+         li {
+            list-style: circle;
+         }
+      }
+      
+      /*Work experience timeline*/
+      .timeline {
+         position: relative;
+         padding-left: $spacing-small;
+         margin: $spacing-medium 0;
+         border-left: 2px solid $light-text;
 
-         .skill-list {
+         .timeline-item {
             display: flex;
-            flex-wrap: wrap;
-            gap: $spacing-small;
-         }
-
-         .badge {
-            padding: $spacing-small;
-            font-size: 0.8rem;
-            border-radius: $border-radius-md;
-            @include badge-styles;
-         }
-
-         .download-buttons {
-            gap: $spacing-small;
-            display: flex;
-            margin-top: $spacing-medium;
-   
-            @include mobile {
-               flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: $spacing-small;
+            position: relative;
+            
+            .timeline-dot {
+               width: 12px;
+               height: 12px;
+               background-color: $light-background;
+               border: 2px solid $light-text;
+               border-radius: 50%;
+               position: absolute;
+               left: -15px;
+               top: 5px;
             }
-
-            a {
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               gap: $spacing-small;
-            }
-
-            img {
-               height: 1.75rem;
-               width: 1.75rem;
-            }
-         }
-
-         .cv-main {
-            background-color: $light-accent;
-            padding: $spacing-large $spacing-medium;
-
-            h5, h6 {
+            
+            .content {
                padding-left: $spacing-small;
             }
+         }
+      }
+      
+      strong {
+         color: lighten($light-text, 5%);
+      }
 
-            h5 {
-               font-style: italic;
-            }
+      .download-buttons {
+         gap: $spacing-small;
+         display: flex;
+         margin: $spacing-large 0 $spacing-medium;
+
+         @include mobile {
+            flex-direction: column;
+            margin: $spacing-large 0 0;
+         }
+
+         @include md {
+            margin: $spacing-large 0 0;
+         }
+
+         @include lg {
+            justify-content: space-evenly;
+         }
+
+         a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $spacing-small;
+         }
+
+         img {
+            height: 1.75rem;
+            width: 1.75rem;
          }
       }
    }

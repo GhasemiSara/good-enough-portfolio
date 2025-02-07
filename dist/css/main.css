@@ -258,6 +258,10 @@ footer .copyright {
     height: 100%;
   }
 }
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
 .card .card-body {
   padding: 32px;
   flex-grow: 1;
@@ -461,125 +465,190 @@ footer .copyright {
   background-position: center;
 }
 
+/*PORTFOLIO PAGE (portfolio.html)*/
+#portfolioPage {
+  /*Hero*/
+  /*Projects*/
+  /*Skills & Tools*/
+  /*Curriculum*/
+}
 #portfolioPage h2 {
   font-weight: 500;
   font-size: 2rem;
   font-style: italic;
 }
-#portfolioPage #heroPortfolio {
+#portfolioPage .hero-portfolio {
   margin: 32px auto 16px;
 }
-#portfolioPage #heroPortfolio .row {
+#portfolioPage .hero-portfolio .row {
   padding: 0 16px;
   align-items: center;
 }
-#portfolioPage #heroPortfolio .button-container {
+#portfolioPage .hero-portfolio .button-container {
   display: flex;
   gap: 16px;
 }
-#portfolioPage #heroPortfolio .illustration {
+#portfolioPage .hero-portfolio .illustration {
   margin-top: 32px;
 }
-#portfolioPage #heroPortfolio .illustration img {
+#portfolioPage .hero-portfolio .illustration img {
   margin: auto;
   display: block;
 }
-#portfolioPage #portfolioProjects {
+#portfolioPage .portfolio-projects {
   padding: 32px;
   background-color: #a4a8d4;
 }
-#portfolioPage #portfolioProjects .heading {
+#portfolioPage .portfolio-projects .heading {
   text-align: center;
 }
-#portfolioPage #portfolioSkills {
+#portfolioPage .portfolio-skills {
   padding: 32px 16px;
   text-align: center;
 }
-#portfolioPage #portfolioSkills .skill-icons {
+#portfolioPage .portfolio-skills .skill-icons {
   justify-content: center;
   gap: 16px;
 }
-#portfolioPage #portfolioSkills .skill-icons img {
+#portfolioPage .portfolio-skills .skill-icons img {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
   width: 60px;
   height: 60px;
 }
-#portfolioPage #portfolioSkills .skill-icons img:hover, #portfolioPage #portfolioSkills .skill-icons img:focus {
+#portfolioPage .portfolio-skills .skill-icons img:hover, #portfolioPage .portfolio-skills .skill-icons img:focus {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-#portfolioPage #portfolioSkills .skill-icons img:active {
+#portfolioPage .portfolio-skills .skill-icons img:active {
   transform: translateY(0px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-#portfolioPage #cv {
+#portfolioPage .portfolio-cv {
   padding: 0 16px;
+  /*Skills section*/
+  /*Main section*/
+  /*Work experience timeline*/
 }
-#portfolioPage #cv .cv-heading {
+#portfolioPage .portfolio-cv .cv-heading {
   text-align: center;
 }
-#portfolioPage #cv .cv-container {
+#portfolioPage .portfolio-cv .cv-container {
   border: 4px solid #eea30f;
   border-radius: 10px;
 }
-#portfolioPage #cv .cv-container .cv-skills {
+#portfolioPage .portfolio-cv .cv-skills {
   padding: 32px 16px;
 }
-#portfolioPage #cv .cv-container .skill-category {
+@media (min-width: 992px) {
+  #portfolioPage .portfolio-cv .cv-skills {
+    padding: 32px;
+  }
+}
+#portfolioPage .portfolio-cv .skill-category {
   margin-bottom: 16px;
   padding: 8px;
 }
-#portfolioPage #cv .cv-container .skill-list {
+#portfolioPage .portfolio-cv .skill-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-#portfolioPage #cv .cv-container .badge {
+#portfolioPage .portfolio-cv .badge {
   padding: 8px;
   font-size: 0.8rem;
   border-radius: 8px;
 }
-#portfolioPage #cv .cv-container .badge.badge-pr {
+#portfolioPage .portfolio-cv .badge.badge-pr {
   background-color: rgba(114, 178, 95, 0.6);
   color: #0b2005;
 }
-#portfolioPage #cv .cv-container .badge.badge-sc {
+#portfolioPage .portfolio-cv .badge.badge-sc {
   background-color: rgba(164, 168, 212, 0.6);
   color: #0b2005;
 }
-#portfolioPage #cv .cv-container .badge.badge-ac {
+#portfolioPage .portfolio-cv .badge.badge-ac {
   background-color: rgba(238, 163, 15, 0.6);
   color: #0b2005;
 }
-#portfolioPage #cv .cv-container .download-buttons {
-  gap: 8px;
-  display: flex;
-  margin-top: 16px;
+#portfolioPage .portfolio-cv .cv-main {
+  background-color: #eea30f;
+  padding: 32px 16px;
 }
-@media (max-width: 767.98px) {
-  #portfolioPage #cv .cv-container .download-buttons {
-    flex-direction: column;
+@media (min-width: 992px) {
+  #portfolioPage .portfolio-cv .cv-main {
+    padding: 32px;
   }
 }
-#portfolioPage #cv .cv-container .download-buttons a {
+#portfolioPage .portfolio-cv .cv-main h5, #portfolioPage .portfolio-cv .cv-main h6 {
+  padding-left: 8px;
+}
+#portfolioPage .portfolio-cv .cv-main h5 {
+  font-style: italic;
+}
+#portfolioPage .portfolio-cv .cv-main h6 {
+  color: #133608;
+}
+#portfolioPage .portfolio-cv .cv-main li {
+  list-style: circle;
+}
+#portfolioPage .portfolio-cv .timeline {
+  position: relative;
+  padding-left: 8px;
+  margin: 16px 0;
+  border-left: 2px solid #0b2005;
+}
+#portfolioPage .portfolio-cv .timeline .timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  position: relative;
+}
+#portfolioPage .portfolio-cv .timeline .timeline-item .timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #f0f4f1;
+  border: 2px solid #0b2005;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  top: 5px;
+}
+#portfolioPage .portfolio-cv .timeline .timeline-item .content {
+  padding-left: 8px;
+}
+#portfolioPage .portfolio-cv strong {
+  color: #133608;
+}
+#portfolioPage .portfolio-cv .download-buttons {
+  gap: 8px;
+  display: flex;
+  margin: 32px 0 16px;
+}
+@media (max-width: 767.98px) {
+  #portfolioPage .portfolio-cv .download-buttons {
+    flex-direction: column;
+    margin: 32px 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #portfolioPage .portfolio-cv .download-buttons {
+    margin: 32px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #portfolioPage .portfolio-cv .download-buttons {
+    justify-content: space-evenly;
+  }
+}
+#portfolioPage .portfolio-cv .download-buttons a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
-#portfolioPage #cv .cv-container .download-buttons img {
+#portfolioPage .portfolio-cv .download-buttons img {
   height: 1.75rem;
   width: 1.75rem;
-}
-#portfolioPage #cv .cv-container .cv-main {
-  background-color: #eea30f;
-  padding: 32px 16px;
-}
-#portfolioPage #cv .cv-container .cv-main h5, #portfolioPage #cv .cv-container .cv-main h6 {
-  padding-left: 8px;
-}
-#portfolioPage #cv .cv-container .cv-main h5 {
-  font-style: italic;
 }
 
 /*CONTACT PAGE (contact.html)*/

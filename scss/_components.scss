@@ -72,6 +72,11 @@
       height: 100%;
    }
 
+   img {
+      height: 300px;
+      object-fit: cover;
+   }
+
    .card-body {
       padding: $spacing-large;
       flex-grow: 1;

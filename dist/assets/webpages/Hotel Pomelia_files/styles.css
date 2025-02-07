@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+body{
+    background-image: url(sfondo.png);
+    background-size: 30em;
+}
+
+header{
+    background-color: #004d1a;  
+}
+
+.logo{
+    block-size: 16em;
+    display: block;
+    margin: auto;
+}
+
+h1{
+    color: #f0eff4ff;
+    background-color: #004d1a;
+    font-size: 3.5em;
+    letter-spacing: 0.2em;
+    padding: 0.5em 0.2em;
+    text-align: center;
+    text-shadow: 0.1em 0.1em #32213aff;
+}
+
+.immagine{
+    width: 100%;
+    height: 100%;
+}
+
+.vision{
+    padding: 1.5em;
+    margin: 2em 6em;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    background: #66717eff 2em;
+    color: #f0eff4ff;
+    text-shadow: 0.1em 0.2em #383b53ff;
+}
+
+h2{
+    padding: 0.7em 0 0.5em 0.7em;
+    margin: 0.5em 0;
+    color: #f0eff4ff;
+    background-color: #383b53ff;
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+.testo{
+    padding: 1.5em 5em 1em;
+    margin: 0 5em;
+    color: #32213aff;
+    background: #f0eff4ff;
+    text-align: justify;
+}
+
+.linea{
+    border: 0.1em solid #f0eff4ff;
+}
+
+h3{
+    padding: 0.7em 0 0.5em 0.7em;
+    margin: 0.5em 0;
+    color: #f0eff4ff;
+    background-color: #66717eff;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-shadow: 0.1em 0.1em #32213aff;
+}
+
+.button{
+    background-color:#f0eff4ff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1.5em;
+    text-align: center;
+    border: 0.2em solid #32213aff;
+    border-radius: 0.5em;
+    margin: auto;
+    display: block;
+    width: 40%;
+}
+
+.padding{
+    padding: 1.7em 0;
+}
+
+a:link {
+    color: #383b53ff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #66717eff;
+}
+
+a:hover {
+    color: #32213aff;
+}
+
+
+
+/* pakistan-green: #004d1aff;
+--dark-purple: #32213aff;
+--space-cadet: #383b53ff;
+--paynes-gray: #66717eff;
+--ghost-white: #f0eff4ff;*/
+
