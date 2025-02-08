@@ -736,6 +736,9 @@ footer .copyright {
   border-radius: 15px;
   margin: 0 8px;
 }
+#contactPage .contact-form #contactForm p {
+  margin-top: 8px;
+}
 #contactPage .contact-form input {
   background-color: #f0f4f1;
   color: #133608;

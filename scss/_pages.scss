@@ -455,6 +455,12 @@
       border-radius: 15px;
       margin: 0 $spacing-small;
 
+      #contactForm {
+         p {
+            margin-top: $spacing-small;
+         }
+      }
+
       input {
          background-color: $light-background;
          color: lighten($light-text, 5%);
