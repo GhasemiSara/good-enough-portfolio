@@ -661,6 +661,9 @@ footer .copyright {
   /*Social Media Links*/
   /*Contact Form*/
 }
+#contactPage h2 {
+  font-style: italic;
+}
 #contactPage .contact-cta {
   margin: 32px auto 0;
   padding: 0 32px;
@@ -669,9 +672,6 @@ footer .copyright {
   #contactPage .contact-cta {
     padding: 0 64px;
   }
-}
-#contactPage .contact-cta h1 {
-  font-style: italic;
 }
 #contactPage .contact-cta img {
   margin: 16px auto 0;
@@ -736,13 +736,33 @@ footer .copyright {
   border-radius: 15px;
   margin: 0 8px;
 }
-#contactPage .contact-form #contactForm p {
-  margin-top: 8px;
+@media (min-width: 992px) {
+  #contactPage .contact-form {
+    padding: 32px;
+  }
 }
-#contactPage .contact-form input {
+#contactPage .contact-form #contactForm label {
+  font-weight: 500;
+}
+#contactPage .contact-form #contactForm input {
   background-color: #f0f4f1;
   color: #133608;
 }
-#contactPage .contact-form img {
-  border: 6px dashed #f0f4f1;
+#contactPage .contact-form #contactForm p {
+  margin-top: 8px;
+}
+#contactPage .contact-form #contactForm .form-field {
+  margin-bottom: 16px;
+}
+#contactPage .contact-form #contactForm button {
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  #contactPage .contact-form .image-container {
+    margin-top: 16px;
+  }
+}
+#contactPage .contact-form .image-container img {
+  border: 4px dashed #f0f4f1;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
