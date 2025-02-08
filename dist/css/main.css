@@ -260,7 +260,9 @@ footer .copyright {
 }
 .card img {
   height: 300px;
+  width: auto;
   object-fit: cover;
+  object-position: center;
 }
 .card .card-body {
   padding: 32px;

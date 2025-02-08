@@ -74,7 +74,9 @@
 
    img {
       height: 300px;
+      width: auto;
       object-fit: cover;
+      object-position: center;
    }
 
    .card-body {
