@@ -235,8 +235,10 @@
 
          img {
             @include button-transform;
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            padding: $spacing-small;
          }
       }
    }
@@ -375,7 +377,91 @@
 }
 
 /*CONTACT PAGE (contact.html)*/
-/*Hero*/
+#contactPage {
+   /*Call to action*/
+   .contact-cta {
+      margin: $spacing-large auto 0;
+      padding: 0 $spacing-large;
 
-/*Social Media Links*/
-/*Add transform-scale mixin to icons (img)*/
+      @include lg {
+         padding: 0 $spacing-extra-large;
+      }
+      
+      h1 {
+         font-style: italic;
+      }
+
+      img {
+         margin: $spacing-medium auto 0;
+         padding: $spacing-medium $spacing-large 0;
+         object-fit: cover;
+      }
+   }
+
+   .contact-button {
+      display: flex;
+      margin-top: $spacing-medium;
+      gap: $spacing-small;
+   }
+
+   /*Social Media Links*/
+   .contact-social {
+      margin: $spacing-large auto;
+      padding: 0 $spacing-medium;
+      text-align: center;
+      
+      .contact-icons {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: $spacing-small;
+         
+         @include lg {
+            justify-content: center;
+            gap: $spacing-large;
+         }
+      }
+      
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         @include mobile {
+            width: 40%;
+         }
+
+         @include md {
+            width: 20%;
+         }
+      }
+
+      img {
+         width: 70px;
+         height: auto;
+         border-radius: 10px;
+         @include transform-scale;
+
+         @include lg {
+            width: 85px;
+         }
+      }
+   }
+
+   /*Contact Form*/
+   .contact-form {
+      background-color: $light-primary;
+      padding: $spacing-large $spacing-medium;
+      border-radius: 15px;
+      margin: 0 $spacing-small;
+
+      input {
+         background-color: $light-background;
+         color: lighten($light-text, 5%);
+      }
+
+      img {
+         border: 6px dashed $light-background;
+      }
+   }
+}

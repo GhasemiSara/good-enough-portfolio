@@ -512,8 +512,10 @@ footer .copyright {
 }
 #portfolioPage .portfolio-skills .skill-icons img {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 8px;
 }
 #portfolioPage .portfolio-skills .skill-icons img:hover, #portfolioPage .portfolio-skills .skill-icons img:focus {
   transform: translateY(-2px);
@@ -652,6 +654,90 @@ footer .copyright {
 }
 
 /*CONTACT PAGE (contact.html)*/
-/*Hero*/
-/*Social Media Links*/
-/*Add transform-scale mixin to icons (img)*//*# sourceMappingURL=main.css.map */
+#contactPage {
+  /*Call to action*/
+  /*Social Media Links*/
+  /*Contact Form*/
+}
+#contactPage .contact-cta {
+  margin: 32px auto 0;
+  padding: 0 32px;
+}
+@media (min-width: 992px) {
+  #contactPage .contact-cta {
+    padding: 0 64px;
+  }
+}
+#contactPage .contact-cta h1 {
+  font-style: italic;
+}
+#contactPage .contact-cta img {
+  margin: 16px auto 0;
+  padding: 16px 32px 0;
+  object-fit: cover;
+}
+#contactPage .contact-button {
+  display: flex;
+  margin-top: 16px;
+  gap: 8px;
+}
+#contactPage .contact-social {
+  margin: 32px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+#contactPage .contact-social .contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+@media (min-width: 992px) {
+  #contactPage .contact-social .contact-icons {
+    justify-content: center;
+    gap: 32px;
+  }
+}
+#contactPage .contact-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767.98px) {
+  #contactPage .contact-social a {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #contactPage .contact-social a {
+    width: 20%;
+  }
+}
+#contactPage .contact-social img {
+  width: 70px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#contactPage .contact-social img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 992px) {
+  #contactPage .contact-social img {
+    width: 85px;
+  }
+}
+#contactPage .contact-form {
+  background-color: #72b25f;
+  padding: 32px 16px;
+  border-radius: 15px;
+  margin: 0 8px;
+}
+#contactPage .contact-form input {
+  background-color: #f0f4f1;
+  color: #133608;
+}
+#contactPage .contact-form img {
+  border: 6px dashed #f0f4f1;
+}/*# sourceMappingURL=main.css.map */

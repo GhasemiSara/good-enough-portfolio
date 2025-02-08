@@ -56,82 +56,75 @@
       </nav>
    </header>
 
-   <main>
+   <main id="contactPage">
       <!--Call to Action-->
-      <section class="container my-5">
-         <div class="row align-items-center text-center text-md-start">
+      <section class="contact-cta container">
+         <div class="row text-center text-md-start">
             <div class="col-md-6">
-               <h1>Let's Connect and Create Something Amazing!</h1>
+               <h1>Have a project in mind? Let's bring it to life!</h1>
             </div>
             <div class="col-md-6">
                <p>I'd love to hear from you. Whether you have a question, a project in mind, or just want to chat, feel free to reach out!</p>
-               <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+               <div class="contact-button justify-content-center justify-content-md-start">
                   <a href="#contactForm" class="btn btn-primary">Get in Touch</a>
+               </div>
+            </div>
+         </div>
+         <img src="dist/assets/images/contact-hero.png" alt="Letters illustration" class="container img-fluid">
+      </section>
+
+      <!--Social Media Links-->
+      <section class="contact-social container">
+         <div class="row">
+            <div class="col-12">
+               <h2>Find Me on Social Media...</h2>
+               <p>Let's stay connected! Follow me for updates, projects, and inspiration.</p>
+               <div class="contact-icons">
+                  <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
+                     <img src="https://img.icons8.com/?size=100&id=42453&format=png&color=a4a8d4" alt="LinkedIn icon">
+                  </a>
+                  <a href="https://github.com" target="_blank" aria-label="GitHub">
+                     <img src="https://img.icons8.com/?size=100&id=101795&format=png&color=a4a8d4" alt="GitHub icon">
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                     <img src="https://img.icons8.com/?size=100&id=42328&format=png&color=a4a8d4" alt="Instagram icon">
+                  </a>
+                  <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                     <img src="https://img.icons8.com/?size=100&id=42493&format=png&color=a4a8d4" alt="YouTube icon">
+                  </a>
                </div>
             </div>
          </div>
       </section>
 
-      <!--Social Media Links-->
-      <section id="socialMedia" class="container my-5">
-         <div class="row text-center">
-            <div class="col-12">
-               <h2>Find Me on Social Media</h2>
-               <p>Let's connect on these platforms</p>
-               <ul class="list-unstyled d-flex justify-content-center gap-4">
-                  <li>
-                     <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin">
-                        <img src="https://img.icons8.com/?size=100&id=42453&format=png&color=921909" alt="LinkedIn icon" width="70" height="70">
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://github.com" target="_blank" aria-label="GitHub">
-                        <img src="https://img.icons8.com/?size=100&id=101795&format=png&color=921909" alt="GitHub icon" width="70" height="70">
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                        <img src="https://img.icons8.com/?size=100&id=42328&format=png&color=921909" alt="Instagram icon" width="70" height="70">
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
-                        <img src="https://img.icons8.com/?size=100&id=42493&format=png&color=921909" alt="YouTube icon" width="70" height="70">
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </section>
-
       <!--Contact Form-->
-      <section id="contactForm" class="container my-5">
-         <div class="row align-items-center">
+      <section class="container">
+         <div class="row contact-form align-items-center">
             <!--Form-->
             <div class="col-12 col-md-6">
-               <h2 class="text-center text-md-start">Send Me a Message</h2>
+               <h2 class="text-center text-md-start">...Or Drop Me a Message Here!</h2>
                <p class="text-center text-md-start">Fill out the form below and I'll get back to you as soon as possible!</p>
                
                <!--placeholder, inserire con email.js!!!-->
                <form>
                   <div class="mb-3">
                      <label for="name" class="form-label">Name</label>
-                     <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                     <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                   </div>
                   <div class="mb-3">
                      <label for="email" class="form-label">Email address</label>
-                     <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                     <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                   </div>
                   <div class="mb-3">
                      <label for="message" class="form-label">Message</label>
-                     <textarea type="text" class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                     <textarea type="text" class="form-control" id="message" rows="5" placeholder="Tell me about your project, idea, or just say hello!" required></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                  <button type="submit" class="btn btn-secondary w-100">Send Message</button>
                </form>
             </div>
             <!--Image-->
             <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
-               <img src="https://picsum.photos/700/500" alt="Contact Graphic" class="img-fluid rounded">
+               <img src="dist/assets/images/form-illustration.png" alt="Contact Graphic" class="img-fluid rounded">
             </div>
          </div>
       </section>
