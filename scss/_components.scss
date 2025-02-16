@@ -81,15 +81,13 @@
 
    .card-body {
       padding: $spacing-large;
-      flex-grow: 1;
       display: flex;
+      flex-grow: 1;
       flex-direction: column;
+      justify-content: flex-start;
 
-      @include lg {
-         justify-content: space-between;
-      }
 
-      .card-title, .card-text, .d-flex {
+      .card-title, .card-text, .badges-container {
          margin-bottom: $spacing-small;
       }
       
@@ -109,15 +107,15 @@
          border-radius: $border-radius-md;
          @include badge-styles;
       }
+   }
 
-      .view-project {
-         margin-top: $spacing-large;
-         display: flex;
-         justify-content: flex-end;
+   .view-project {
+      padding: $spacing-large;
+      display: flex;
+      justify-content: flex-end;
 
-         @include mobile {
-            justify-content: center;
-         }
+      @include mobile {
+         justify-content: center;
       }
    }
 }

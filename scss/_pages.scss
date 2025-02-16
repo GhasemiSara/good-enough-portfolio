@@ -34,20 +34,25 @@
    .projects {
       padding: $spacing-extra-large $spacing-large;
       background-color: $light-primary;
-   
-      .row {
-         align-items: stretch;
+      @include lg {
+         padding: $spacing-extra-large 5%;
       }
-   
+      
+      h2 {
+         font-weight: 500;
+         font-size: 2rem;
+         font-style: italic;
+      }
+
+      @include md {
+         .col-md-6 {
+            display: flex;
+         }
+      }
+      
       .projects-heading {
          text-align: center;
          color: $light-background;
-         
-         h2 {
-            font-weight: 500;
-            font-size: 2rem;
-            font-style: italic;
-         }
       }
    
       .view-all {
@@ -70,8 +75,12 @@
    }
    
    /*About*/
-   #about {
+   .about {
       margin: $spacing-extra-large auto;
+
+      .row {
+         align-items: center;
+      }
    
       h2 {
          font-weight: 500;
@@ -109,7 +118,10 @@
    }
    
    /*Call to Action*/
-   #cta {
+   .cta {
+      display: flex;
+      text-align: center;
+
       h2 {
          font-style: italic;
       }
@@ -119,6 +131,18 @@
          
          .text-container {
             padding: $spacing-medium;
+         }
+
+         a {
+            background-color: $light-accent;
+   
+            &:hover, &:focus {
+               background-color: lighten($light-accent, 10%);
+            }
+      
+            &:active {
+               background-color: darken($light-accent, 10%);
+            }
          }
       }
    }
@@ -237,6 +261,12 @@
    .portfolio-projects {
       padding: $spacing-large;
       background-color: $light-secondary;
+      @include md {
+         .col-md-6 {
+            display: flex;
+            flex: 1 1 1;
+         }
+      }
 
       .heading {
          text-align: center;

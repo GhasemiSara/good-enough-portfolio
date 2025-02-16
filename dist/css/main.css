@@ -266,16 +266,12 @@ footer .copyright {
 }
 .card .card-body {
   padding: 32px;
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  justify-content: flex-start;
 }
-@media (min-width: 992px) {
-  .card .card-body {
-    justify-content: space-between;
-  }
-}
-.card .card-body .card-title, .card .card-body .card-text, .card .card-body .d-flex {
+.card .card-body .card-title, .card .card-body .card-text, .card .card-body .badges-container {
   margin-bottom: 8px;
 }
 .card .card-body .card-title {
@@ -303,13 +299,13 @@ footer .copyright {
   background-color: rgba(238, 163, 15, 0.6);
   color: #0b2005;
 }
-.card .card-body .view-project {
-  margin-top: 32px;
+.card .view-project {
+  padding: 32px;
   display: flex;
   justify-content: flex-end;
 }
 @media (max-width: 767.98px) {
-  .card .card-body .view-project {
+  .card .view-project {
     justify-content: center;
   }
 }
@@ -348,17 +344,24 @@ footer .copyright {
   padding: 64px 32px;
   background-color: #72b25f;
 }
-#landingPage .projects .row {
-  align-items: stretch;
+@media (min-width: 992px) {
+  #landingPage .projects {
+    padding: 64px 5%;
+  }
+}
+#landingPage .projects h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #landingPage .projects .col-md-6 {
+    display: flex;
+  }
 }
 #landingPage .projects .projects-heading {
   text-align: center;
   color: #f0f4f1;
-}
-#landingPage .projects .projects-heading h2 {
-  font-weight: 500;
-  font-size: 2rem;
-  font-style: italic;
 }
 #landingPage .projects .view-all {
   margin-top: 32px;
@@ -374,45 +377,61 @@ footer .copyright {
 #landingPage .projects .view-all a:active {
   background-color: #be820c;
 }
-#landingPage #about {
+#landingPage .about {
   margin: 64px auto;
 }
-#landingPage #about h2 {
+#landingPage .about .row {
+  align-items: center;
+}
+#landingPage .about h2 {
   font-weight: 500;
   font-size: 2rem;
   font-style: italic;
 }
-#landingPage #about h5 {
+#landingPage .about h5 {
   margin-top: 32px;
 }
-#landingPage #about ul {
+#landingPage .about ul {
   margin-top: 16px;
   list-style: none;
   padding-left: 8px;
 }
-#landingPage #about ul li {
+#landingPage .about ul li {
   background-image: url("https://img.icons8.com/?size=100&id=87608&format=png&color=72b25f");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: left top;
   padding-left: 30px;
 }
-#landingPage #about span {
+#landingPage .about span {
   font-weight: 600;
 }
-#landingPage #about img {
+#landingPage .about img {
   max-width: 100%;
   height: auto;
   border-radius: 90px;
 }
-#landingPage #cta h2 {
+#landingPage .cta {
+  display: flex;
+  text-align: center;
+}
+#landingPage .cta h2 {
   font-style: italic;
 }
-#landingPage #cta .row {
+#landingPage .cta .row {
   background-color: rgba(240, 244, 241, 0.3);
 }
-#landingPage #cta .row .text-container {
+#landingPage .cta .row .text-container {
   padding: 16px;
+}
+#landingPage .cta .row a {
+  background-color: #eea30f;
+}
+#landingPage .cta .row a:hover, #landingPage .cta .row a:focus {
+  background-color: #f3b63d;
+}
+#landingPage .cta .row a:active {
+  background-color: #be820c;
 }
 
 /*ABOUT PAGE (about.html)*/
@@ -514,6 +533,12 @@ footer .copyright {
 #portfolioPage .portfolio-projects {
   padding: 32px;
   background-color: #a4a8d4;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #portfolioPage .portfolio-projects .col-md-6 {
+    display: flex;
+    flex: 1 1 1;
+  }
 }
 #portfolioPage .portfolio-projects .heading {
   text-align: center;
