@@ -1,106 +1,125 @@
 /*LANDING PAGE (index.html)*/
+#landingPage {
+   /*Hero*/
+   .hero {
+      margin: $spacing-medium auto $spacing-large;
+      
+      h1 {
+         font-size: 2.5rem;
+         font-style: italic;
+      }
+      
+      .row {
+         padding: $spacing-large;
+         align-items: center;
+      }
 
-/*Hero*/
-#hero {
-   margin: $spacing-medium auto $spacing-large;
-   
-   h1 {
-      font-size: 2.5rem;
-      font-style: italic;
-   }
-   
-   .row {
-      padding: $spacing-large;
-      align-items: center;
-
-      .d-flex {
+      .hero-buttons {
+         display: flex;
          gap: 1rem;
          margin-top: $spacing-small;
       }
 
-      .col-12 {
+      .hero-graphic {
          margin-top: $spacing-large;
+
+         img {
+            margin: 0 auto;
+            display: block;
+         }
       }
    }
-}
-
-/*Projects*/
-#projects {
-   padding: $spacing-extra-large $spacing-large;
-   background-color: $light-primary;
-
-   .row {
-      align-items: stretch;
-   }
-
-   .section-heading {
-      text-align: center;
-      color: $light-background;
+   
+   /*Projects*/
+   .projects {
+      padding: $spacing-extra-large $spacing-large;
+      background-color: $light-primary;
+   
+      .row {
+         align-items: stretch;
+      }
+   
+      .projects-heading {
+         text-align: center;
+         color: $light-background;
+         
+         h2 {
+            font-weight: 500;
+            font-size: 2rem;
+            font-style: italic;
+         }
+      }
+   
+      .view-all {
+         margin-top: $spacing-large;
+         display: flex;
+         justify-content: center;
+   
+         a {
+            background-color: $light-accent;
+   
+            &:hover, &:focus {
+               background-color: lighten($light-accent, 10%);
+            }
       
+            &:active {
+               background-color: darken($light-accent, 10%);
+            }
+         }
+      }
+   }
+   
+   /*About*/
+   #about {
+      margin: $spacing-extra-large auto;
+   
       h2 {
          font-weight: 500;
          font-size: 2rem;
          font-style: italic;
       }
-   }
-
-   .view-all {
-      margin-top: $spacing-large;
-      display: flex;
-      justify-content: center;
-   }
-}
-
-/*About*/
-#about {
-   margin: $spacing-extra-large auto;
-
-   h2 {
-      font-weight: 500;
-      font-size: 2rem;
-      font-style: italic;
-   }
-
-   h5 {
-      margin-top: $spacing-large;
-   }
-
-   ul {
-      margin-top: $spacing-medium;
-      list-style: none;
-      padding-left: $spacing-small;
-
-      li {
-         background-image: url('https://img.icons8.com/?size=100&id=87608&format=png&color=72b25f');
-         background-size: 20px 20px;
-         background-repeat: no-repeat;
-         background-position: left top;
-         padding-left: 30px;
+   
+      h5 {
+         margin-top: $spacing-large;
+      }
+   
+      ul {
+         margin-top: $spacing-medium;
+         list-style: none;
+         padding-left: $spacing-small;
+   
+         li {
+            background-image: url('https://img.icons8.com/?size=100&id=87608&format=png&color=72b25f');
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-left: 30px;
+         }
+      }
+   
+      span {
+         font-weight: 600;
+      }
+      
+      img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 90px;
       }
    }
-
-   span {
-      font-weight: 600;
-   }
    
-   img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 90px;
-   }
-}
-
-/*Call to Action*/
-#cta {
-   h2 {
-      font-style: italic;
-   }
-
-   .row {
-      background-color: rgba($light-background, 0.3);
-      
-      .text-container {
-         padding: $spacing-medium;
+   /*Call to Action*/
+   #cta {
+      h2 {
+         font-style: italic;
+      }
+   
+      .row {
+         background-color: rgba($light-background, 0.3);
+         
+         .text-container {
+            padding: $spacing-medium;
+         }
       }
    }
 }
@@ -234,10 +253,8 @@
          gap: $spacing-medium;
 
          img {
-            @include button-transform;
             width: 70px;
             height: 70px;
-            border-radius: 10px;
             padding: $spacing-small;
          }
       }
@@ -253,7 +270,7 @@
 
       .cv-container {
          border: 4px solid $light-accent;
-         border-radius: 10px;
+         border-radius: $border-radius-lg;
       }
 
       /*Skills section*/
@@ -439,7 +456,7 @@
       img {
          width: 70px;
          height: auto;
-         border-radius: 10px;
+         border-radius: $border-radius-lg;
          @include transform-scale;
 
          @include lg {
@@ -452,7 +469,7 @@
    .contact-form {
       background-color: $light-primary;
       padding: $spacing-large $spacing-medium;
-      border-radius: 15px;
+      border-radius: $border-radius;
       margin: 0 $spacing-small;
       @include lg {
          padding: $spacing-large;
@@ -488,7 +505,7 @@
 
          img {
             border: 4px dashed $light-background;
-            border-radius: 5px;
+            border-radius: $border-radius-md;
          }
       }
    }
