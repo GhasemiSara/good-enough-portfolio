@@ -139,6 +139,7 @@ footer {
          img {
             width: 40px;
             height: 40px;
+            border-radius: $border-radius-md;
             @include transform-scale;
          }
       }

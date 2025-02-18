@@ -175,6 +175,10 @@
       padding: $spacing-medium $spacing-medium $spacing-large;
       background-color: $light-secondary;
 
+      @include lg {
+         padding: $spacing-medium $spacing-extra-large $spacing-large;
+      }
+
       img {
          display: block;
          margin: auto;
@@ -197,11 +201,11 @@
          font-weight: 500;
       }
       
-      .d-flex {
+      .items-container {
+         display: flex;
          gap: 1.5rem;
-         
+
          img {
-            @include transform-scale;
             box-shadow: $shadow-light;
          }
       }
@@ -210,8 +214,9 @@
          flex: 1;
       }
       
-      .rounded-circle {
+      .value-icon {
          height: 10rem;
+         border-radius: 50%;
       }
    }
 
@@ -261,11 +266,9 @@
    .portfolio-projects {
       padding: $spacing-large;
       background-color: $light-secondary;
-      @include md {
-         .col-md-6 {
-            display: flex;
-            flex: 1 1 1;
-         }
+      
+      .col-md-6 {
+         display: flex;
       }
 
       .heading {

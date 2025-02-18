@@ -159,6 +159,7 @@ footer .social-icons ul {
 footer .social-icons ul img {
   width: 40px;
   height: 40px;
+  border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 footer .social-icons ul img:hover {
@@ -457,6 +458,11 @@ footer .copyright {
   padding: 16px 16px 32px;
   background-color: #a4a8d4;
 }
+@media (min-width: 992px) {
+  #aboutPage .present {
+    padding: 16px 64px 32px;
+  }
+}
 #aboutPage .present img {
   display: block;
   margin: auto;
@@ -474,22 +480,19 @@ footer .copyright {
 #aboutPage .values-passions span {
   font-weight: 500;
 }
-#aboutPage .values-passions .d-flex {
+#aboutPage .values-passions .items-container {
+  display: flex;
   gap: 1.5rem;
 }
-#aboutPage .values-passions .d-flex img {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-#aboutPage .values-passions .d-flex img:hover {
-  transform: scale(1.1);
+#aboutPage .values-passions .items-container img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 #aboutPage .values-passions .value-item {
   flex: 1;
 }
-#aboutPage .values-passions .rounded-circle {
+#aboutPage .values-passions .value-icon {
   height: 10rem;
+  border-radius: 50%;
 }
 #aboutPage .cta {
   margin: 8px auto;
@@ -534,11 +537,8 @@ footer .copyright {
   padding: 32px;
   background-color: #a4a8d4;
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #portfolioPage .portfolio-projects .col-md-6 {
-    display: flex;
-    flex: 1 1 1;
-  }
+#portfolioPage .portfolio-projects .col-md-6 {
+  display: flex;
 }
 #portfolioPage .portfolio-projects .heading {
   text-align: center;
