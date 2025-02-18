@@ -15,7 +15,6 @@ This is my first major project developed during my learning journey in web devel
 - Contact – Links to my social media and a form to send me emails
 
 **Useful Links**:
-- 🌍 [**Visit the website**]()
-- 📄 [**Presentation PDF**]()
+- 🌍 [**Visit the website**](https://ghasemisara.github.io/portfolio-sara-ghasemi/)
 
 Thank you for checking out my project! 😊
